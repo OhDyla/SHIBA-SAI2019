@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*
+    コーディング規約
+    ・コードは 107行目 div main-contents 内部に書く
+
+    フォントシート
+        標準フォント
+        font-family: fantasy;
+        font-family: 'Great Vibes', cursive;
+
+
+*/
+
+
+/* ---------- ---------- --------- */
+/* デザイン前の設定 */
+/*    ※完成後消去 */
+main {
+    background: url("../images/back-image.jpg") center 40% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    min-height: 70px;
+}
+
+nav {
+    position: relative;
+}
+
+.logoL1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+}
+
+.logoR1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+nav li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    padding: 20px 20px 0 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: fantasy;
+    color: rgba(40, 25, 15, 70%);
+    border-bottom: 5px solid rgba(40, 25, 15, 70%);
+}
+
+nav li a:hover {
+    background: #37a29b;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-divide {
+    margin-left: 550px;
+}
+
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 100px auto 900px auto 330px;
+    grid-template-rows: [sidebar] auto [other] auto;
+    position: relative;
+    min-height: 1800px;
+}
+
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/*
+    ここからメインコンテンツ
+*/
+
+/* ---------- ---------- --------- */
+/*
+    メインコンテンツの草
+*/
+
+.main-ropeL2 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 50px;
+}
+
+.main-ropeL3 {
+    position: absolute;
+    top: 900px;
+    left: 30px;
+    width: 50px;
+}
+
+.main-ropeR2 {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 50px;
+}
+
+.main-ropeR3 {
+    position: absolute;
+    top: 900px;
+    right: 30px;
+    width: 50px;
+}
+
+/* ---------- ---------- --------- */
+/*
+    メインの wapper
+*/
+
+.main-contents {
+
+    grid-column: 3;
+    grid-row: 1/-1;
+}
+
+/* ---------- ダイヤモンド --------- */
+
+.main-dia {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.main-dia-img {
+    width: 100px;
+}
