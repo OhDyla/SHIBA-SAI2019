@@ -1,0 +1,601 @@
+@charset "UTF-8";
+
+main {
+    background: url('../images/backimage-1-1.png') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*
+    font-family メモ
+*/
+
+/*
+    z-index メモ
+
+*/
+
+/*
+nav {
+    z-index: 100;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: darkgray;
+    text-align: center;
+    border: solid;
+}
+
+nav i {
+    margin: 15px;
+}
+
+nav .menu-button {
+    color: white;
+}
+*/
+
+nav {
+    z-index: 100;
+    position: fixed;
+    bottom: 60px;
+    right: 35px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(152, 152, 152, 0.43);
+    /*アイコン色*/
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    font-weight: bold;
+    background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+    border-bottom: solid 2px #b5b5b5;
+}
+
+nav i {
+    line-height: 60px;
+}
+
+main h3 {
+    margin: 0 55px 20px 55px;
+    font-size: 33px;
+    text-align: center;
+    /*    color: white;*/
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background: linear-gradient(transparent 35%, #fafa00 35%, #fafa00 100%);
+}
+
+
+main > article {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.hero {
+    /*    background-image: url(../images/hero3.JPG);*/
+    background: linear-gradient(rgba(217, 175, 217, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url(../images/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% top;
+    height: 450px;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+
+.hero .English-page {
+    margin: 0 10px 0 auto;
+    padding: 8px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(125, 125, 125, 0.3);
+    border: solid 2px #ffffff;
+}
+
+
+.hero h2 {
+    margin-top: 70px;
+    font-size: 40px;
+    text-shadow: 0 0 10px #444444;
+    text-align: center;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 10px #444444;
+}
+
+
+.hero .whatsSHIBASAI {
+    border: solid 2px #ffffff;
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+
+.article-nortify {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #0a0a0a;
+}
+
+.article-nortify .card {
+    width: 22%;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.article-nortify .card .img-wrapper {
+    padding: 7px 7px 0 7px;
+}
+
+.article-nortify .card h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.article-calousel {
+    margin: 0;
+    padding: 40px 15px;
+    background-color: #0a0a0a;
+
+}
+
+.article-calousel img {
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+}
+
+
+
+.article-event {
+    /*    background-color: rgba(0, 255, 255, 0.8);*/
+    /*    background-color: rgba(224, 255, 255, 0.7);*/
+    background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+
+.article-event ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article-event li {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 0 0 55%;
+    display: flex;
+    flex-flow: column;
+    background-color: #fafae0;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+
+.article-event p {
+    margin: 0;
+}
+
+.article-event .evnt-over {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+.article-event .evnt-name {
+    margin: 13px 0;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.article-event .evnt-date,
+.article-event .evnt-time,
+.article-event .evnt-place {
+    margin: 2px 5px;
+    font-weight: 500;
+}
+
+.article-event .evnt-detail {
+    margin: 10px 5px;
+}
+
+.article-event .evnt-button {
+    display: block;
+    margin: auto 20px 20px 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+}
+
+
+.article-josetsu {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.article-josetsu .josetsu-wrapper {
+    background: linear-gradient(rgba(217, 175, 217, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%), url(../images/josetsukikaku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% center;
+    margin: 10px;
+    width: auto;
+    padding: auto auto;
+    height: 250px;
+    position: relative;
+}
+
+.article-josetsu .josetsu-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 15px 0 10px 15px;
+    width: 65%;
+    height: 45%;
+    background-color: black;
+
+}
+
+.article-josetsu h4 {
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+}
+
+.article-josetsu h5 {
+    position: absolute;
+    margin: 0;
+    bottom: 10%;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+}
+
+.article-guest {
+    /*    background-color: rgba(0, 255, 255, 0.8);*/
+    /*    background-color: rgba(224, 255, 255, 0.7);*/
+    background-color: rgba(255, 255, 255, 0.7);
+
+
+}
+
+
+.article-guest > .guest-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/geinou_comming_2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% center;
+    margin: 10px;
+    width: auto;
+    padding: auto auto;
+    height: 250px;
+    position: relative;
+    text-align: center;
+    /*    padding: 10px;*/
+}
+
+.article-guest > .guest-image > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+    color: white;
+}
+
+.article-guest h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.article-guest p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.article-card {
+    padding-bottom: 40px;
+    /*    background-color: rgba(0, 255, 255, 0.8);*/
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.article-card .card-wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.card-wrapper-2 > div {
+    height: auto;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: white;
+}
+
+.card-wrapper-2 > div:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.card-wrapper-2 > div > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.article-card h4 {
+    margin-top: 80px;
+    font-size: 22px;
+}
+
+.article-card .card-1 {
+    background: linear-gradient(rgba(255, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url('../images/card-shibasai.JPG');
+    background-size: contain;
+}
+
+.article-card .card-2 {
+    background-image: url(../images/card-corona.jpg);
+}
+
+.article-card .card-2 h4 {
+    font-size: 15px;
+}
+
+.article-card .card-3 {
+    background: linear-gradient(rgba(0, 191, 255, 0.4) 0%, rgba(0, 0, 255, 0.8) 100%), url('../images/card-kodomo.JPG');
+    background-size: contain;
+}
+
+
+.article-card .card-4 {
+    background: linear-gradient(rgba(50, 205, 50, 0.4) 0%, rgba(0, 128, 0, 0.7) 100%), url('../images/card-yonkodai.JPG');
+    background-size: contain;
+}
+
+.article-card .card-3 h4,
+.article-card .card-4 h4 {
+    margin-top: 73px;
+}
+
+.article-access {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.article-access .access-wrapper {
+    padding: 10px;
+}
+
+.article-access h4,
+.article-access p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.article-access h4 {
+    margin-top: 0;
+}
+
+.article-access .ggmap {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.article-access .ggmap iframe,
+.article-access .ggmap object,
+.article-access .ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.article-company {
+    padding-bottom: 50px;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.sns-button {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sns-button li {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    flex: 0 0 25%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color: white;
+}
+
+.sns-button li svg {
+    margin-bottom: 10px;
+}
+
+.sns-button li h4 {
+    margin-top: auto;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.sns-button .li-twitter {
+    background-color: #55acee;
+}
+
+.sns-button .li-insta {
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+}
+
+
+.sns-button h4 {
+    font-size: 13px;
+    color: black;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.sns-button .li-insta h4,
+.sns-button .li-twitter h4 {
+    color: white;
+}
+
+.sns-button .insta-icon {
+    font-size: 90px;
+    color: white;
+}
+
+.sns-button .twit-icon {
+    font-size: 90px;
+    color: white;
+}
+
+footer {
+    margin: 0;
+    padding: 60px 10px 10px 10px;
+    background-color: #f3f3f3;
+
+}
+
+footer h2 {
+    margin: 0 0 30px 30px;
+    font-size: 30px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+
+}
+
+
+footer ul {
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+footer .footer-top p {
+    margin: 10px 0 0 0;
+    color: black;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+
+}
+
+footer .footer-middle p {
+    margin: 8px 0 0 0;
+    color: #a6a9b7;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .footer-bottom h6 {
+    text-align: center;
+    margin: 50px 10px 10px 10px;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

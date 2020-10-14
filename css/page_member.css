@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.dep-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 20px 10px 20px;
+    width: 270px;
+    height: 125px;
+    background-color: red;
+}
+
+.member * {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.member-img {
+    width: 100px;
+    height: 100px;
+}
+
+.member-detail {
+    width: 150px;
+}
+
+.member-dep {
+    margin: 0px 0 15px 0;
+    font-size: 12px;
+}
+
+.member-alph {
+    margin: 0 0 5px 0;
+    font-size: 10px;
+}
+
+.member-name {
+    font-size: 20px;
+}
+
+.member-nickname {
+    margin: 10px 0 15px 0;
+    font-size: 15px;
+}
+
+.member-faculty {
+    font-size: 12px;
+    text-align: right;
+    font-weight: normal;
+}
+
+/* 色 */
+.member-web {
+    background-color: #000080;
+}
+
+.member-pamph {
+    background-color: #483d8b;
+}

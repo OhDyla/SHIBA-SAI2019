@@ -29,6 +29,10 @@ main {
     background-attachment: fixed;
 }
 
+.all-wrapper {
+    background-color: rgba(255, 255, 255, 80%);
+}
+
 header {
     min-height: 70px;
 }
@@ -56,7 +60,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0;
+    margin: 0 200px;
     padding: 0 10px 0 10px;
 }
 
@@ -78,15 +82,17 @@ nav li a:hover {
 }
 
 .nav-divide {
-    margin-left: 550px;
+    margin-left: 200px;
 }
 
 /* ---------- ---------- --------- */
 /* ---------- ---------- --------- */
 
 .main-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: grid;
-    grid-template-columns: 100px auto 900px auto 330px;
+    grid-template-columns: 100px auto 900px auto 100px;
     grid-template-rows: [sidebar] auto [other] auto;
     position: relative;
     min-height: 1800px;
@@ -114,7 +120,7 @@ nav li a:hover {
 
 .main-ropeL3 {
     position: absolute;
-    top: 900px;
+    top: 1400px;
     left: 30px;
     width: 50px;
 }
@@ -128,7 +134,7 @@ nav li a:hover {
 
 .main-ropeR3 {
     position: absolute;
-    top: 900px;
+    top: 1400px;
     right: 30px;
     width: 50px;
 }
@@ -153,4 +159,532 @@ nav li a:hover {
 
 .main-dia-img {
     width: 100px;
+}
+
+
+
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/*  footer  */
+
+footer {
+    padding: 50px 80px 50px 80px;
+    min-height: 250px;
+    background-color: #800000;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.footer-logo {
+    margin: 0 auto 30px auto;
+    max-width: 100px;
+}
+
+.footer-first {
+    display: flex;
+    align-items: center;
+    margin: 60px auto 40px 90px;
+    color: white;
+}
+
+.footer-first h4 {
+    font-size: 25px;
+}
+
+.footer-first ul {
+    margin: 0 150px 0 auto;
+    display: flex;
+}
+
+.footer-first li {
+    margin-left: 50px;
+}
+
+.footer-first li a {
+    font-size: 15px;
+    color: white;
+}
+
+.footer-second {
+    margin: 0 270px 90px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-third {
+    margin-left: 60px;
+}
+
+.footlist-2 {
+    display: flex;
+}
+
+.footlist-3 {
+    margin-right: 100px;
+}
+
+footer li {
+    margin: 10px;
+    list-style: none;
+    color: white;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer-second a,
+.footer-third a {
+    color: #808080;
+}
+
+footer a:hover {
+    transition: 0.2s;
+    color: #ffa07a;
+}
+
+.copy {
+    margin: 80px 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+
+
+@media screen and (max-width: 959px) {
+
+
+    main {}
+
+    .all-wrapper {}
+
+    header {}
+
+    /* ----- ----- ----- ----- */
+    /* headナビゲーション */
+    nav {}
+
+    .logoL1 {
+        top: 20px;
+        right: 20px;
+        width: 70px;
+    }
+
+    .logoR1 {
+        top: 20px;
+        left: 20px;
+        width: 70px;
+    }
+
+
+    nav ul {
+        margin: 0 200px;
+        padding: 0 10px 0 10px;
+    }
+
+    nav li a {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px 10px 0 10px;
+        font-size: 15px;
+        border-bottom: 5px solid rgba(40, 25, 15, 70%);
+    }
+
+    nav li a:hover {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .nav-divide {
+        margin-left: 10%;
+    }
+
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+
+    .main-wrapper {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 70px auto 550px auto 70px;
+        grid-template-rows: [sidebar] auto [other] auto;
+        min-height: 1800px;
+    }
+
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /*
+    ここからメインコンテンツ
+    */
+
+    .main-contents {
+
+        grid-column: 3;
+        grid-row: 1/-1;
+    }
+
+
+    /* ---------- ---------- --------- */
+    /*
+    メインコンテンツの草
+    */
+
+    .main-ropeL2 {
+        top: 300px;
+        left: 10px;
+        width: 30px;
+    }
+
+    .main-ropeL3 {
+        top: 1400px;
+        left: 10px;
+        width: 30px;
+    }
+
+    .main-ropeR2 {
+        top: 300px;
+        right: 10px;
+        width: 30px;
+    }
+
+    .main-ropeR3 {
+        position: absolute;
+        top: 1400px;
+        right: 10px;
+        width: 30px;
+    }
+
+
+    /* ---------- ダイヤモンド --------- */
+
+    .main-dia {
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    .main-dia-img {
+        width: 100px;
+    }
+
+
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /*  footer  */
+
+    footer {
+        padding: 50px 30px 50px 30px;
+        min-height: 250px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 30px auto;
+        max-width: 100px;
+    }
+
+    .footer-first {
+        display: block;
+        align-items: center;
+        margin: 60px auto 40px 90px;
+        color: white;
+    }
+
+    .footer-first h4 {
+        font-size: 25px;
+    }
+
+    .footer-first ul {
+        margin: 50px 50px 0 0;
+        display: block;
+    }
+
+    .footer-first li {
+        margin: 20px 0;
+    }
+
+    .footer-first li a {
+        font-size: 15px;
+        color: white;
+    }
+
+    .footer-second {
+        margin: 70px 270px 90px 80px;
+        display: block;
+    }
+
+    .footer-third {
+        margin-left: 80px;
+    }
+
+    .footlist-2 {
+        display: block;
+    }
+
+    .footlist-3 {
+        margin-top: 70px;
+        margin-right: 100px;
+    }
+
+
+    footer li {
+        margin: 10px;
+        list-style: none;
+        color: white;
+    }
+
+    footer a {
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .footer-second a,
+    .footer-third a {
+        color: #808080;
+    }
+
+    footer a:hover {
+        transition: 0.2s;
+        color: #ffa07a;
+    }
+
+    .copy {
+        margin: 80px 0 0 0;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+
+
+
+}
+
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+
+@media screen and (max-width: 559px) {
+
+    .logoL1 {
+        top: 10px;
+        right: 20px;
+        width: 40px;
+    }
+
+    .logoR1 {
+        top: 10px;
+        left: 20px;
+        width: 40px;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+
+    nav li a {
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 5px 5px 0 5px;
+        font-size: 15px;
+        border-bottom: 3px solid rgba(40, 25, 15, 70%);
+    }
+
+    nav li a:hover {}
+
+    .nav-divide {
+        display: none;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
+    .main-wrapper {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 50px auto 270px auto 50px;
+        grid-template-rows: [sidebar] auto [other] auto;
+        min-height: 1800px;
+    }
+
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /*  footer  */
+
+
+    footer {
+        padding: 30px 10px 20px 10px;
+        min-height: 250px;
+    }
+
+    .footer-logo {
+        margin: 0 auto 10px 30px;
+        max-width: 70px;
+    }
+
+    .footer-first {
+        display: block;
+        align-items: center;
+        margin: 60px auto 40px 10px;
+        color: white;
+    }
+
+    .footer-first h4 {
+        font-size: 25px;
+    }
+
+    .footer-first ul {
+        margin: 50px 0px 0 0;
+        display: block;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    .footer-first li {
+        margin: 20px 0;
+    }
+
+    .footer-first li a {
+        font-size: 15px;
+        color: white;
+    }
+
+    .footer-second {
+        margin: 70px 0px 90px 0px;
+        display: block;
+    }
+
+    .footer-third {
+        margin-left: 0px;
+    }
+
+    .footlist-2 {
+        display: block;
+    }
+
+    .footlist-3 {
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+
+
+    footer li {
+        margin: 10px;
+        list-style: none;
+        color: white;
+    }
+
+    footer a {
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .footer-second a,
+    .footer-third a {
+        color: #808080;
+    }
+
+    footer a:hover {
+        transition: 0.2s;
+        color: #ffa07a;
+    }
+
+    .copy {
+        margin: 60px 0 0 0;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 359px) {
+
+    .logoL1 {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+    }
+
+    .logoR1 {
+        top: 10px;
+        left: 10px;
+        width: 40px;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 10px 0 10px;
+    }
+
+    nav li a {
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 3px 0 3px;
+        font-size: 14px;
+    }
+
+    nav li a:hover {}
+
+    .nav-divide {
+        display: none;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+
+    .main-wrapper {
+        display: grid;
+        grid-template-columns: 10px auto 270px auto 10px;
+        grid-template-rows: [sidebar] auto [other] auto;
+        min-height: 1800px;
+    }
+
+    /* ---------- ---------- --------- */
+    /* メインコンテンツの草 */
+
+    .main-ropeL2,
+    .main-ropeL3,
+    .main-ropeR2,
+    .main-ropeR3 {
+        display: none;
+    }
+
+
+
+
 }

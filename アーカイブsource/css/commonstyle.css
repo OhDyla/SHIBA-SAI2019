@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+    コーディング規約
+
+    ・使用してはいけない htmlタグ
+        body, header, main, footer
+        h1
+
+    ・使用してはいけない class名
+        main-contents, side-bar
+
+
+
+*/
+
+
+/* ---------- ---------- --------- */
+/* デザイン前の設定 */
+/*    ※完成後消去 */
+
+
+
+footer {
+    background-color: antiquewhite;
+    height: 300px;
+}
+
+
+/* ---------- ---------- --------- */
+/* header */
+
+header {
+    min-height: 50px;
+    background: url(../images/backimg-head-2.jpg) left bottom no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    padding-top: 70px;
+    background-color: rgba(70, 70, 70, 70%);
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+}
+
+.header-title img {
+    margin: 0 50px;
+    width: 70px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: azure;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+.header-logo {
+    background: url(../images/47th_logo.png);
+}
+
+nav {
+    border-bottom: 5px solid #37a29b;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px 10px 0 10px;
+}
+
+nav li a {
+    display: block;
+    padding: 25px 20px 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: fantasy;
+    color: #ffffff;
+}
+
+nav li a:hover {
+    background: #37a29b;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* ---------- ---------- --------- */
+/* main 
+
+    補足)
+        flex: 拡大率 縮小率 ベースサイズ(px);
+            拡大率, 縮小率が 0 の場合はレスポンシブで幅が変わらない
+
+*/
+
+main {
+    display: flex;
+    padding: 0 0 40px 0;
+    background: url("../images/back-image.jpg") left bottom no-repeat;
+    background-size: cover;
+}
+
+.side-bar {
+    flex: 0 0 280px;
+    order: 2;
+    margin: 30px 20px 0 0;
+    padding: 30px 0 30px 0;
+    min-height: 1800px;
+}
+
+.main-contents {
+    flex: 1 1 auto;
+    order: 1;
+    margin: 30px auto 0 auto;
+    padding: 30px 0 30px 0;
+    max-width: 1000px;
+    min-height: 1800px;
+    border: 1px solid #000000;
+    background-color: rgba(255, 215, 0, 20%);
+}
+
+/* ---------- ---------- --------- */
+/* サイドバー */
+
+.sidemenu-wrapper {
+    border: 3px double #000000;
+    background-color: rgba(255, 255, 255, 40%);
+}
+
+.side-bar h2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.side-bar ul {
+    margin: 40px 10px 55px 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.side-bar li {
+    margin: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.side-bar li a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.side-bar li:hover {
+    border: 1px solid #00008B;
+}
+
+.side-bar li a:hover {
+    color: #00008B;
+    font-weight: bold;
+    /*    background-color: gray;*/
+}
+
+.side-bar .sideM-imp li {
+    margin: 18px 10px;
+}
+
+.side-bar .sideM-imp li a {
+    font-size: 23px;
+}
+
+/*
+    ---------- ---------- --------- 
+*/
+/* ---------- ---------- --------- */
+/* ---------- ---------- --------- */
+/* レスポンシブ対応 */
+@media screen and (max-width: 1300px) {
+
+    .side-bar {
+        display: none;
+    }
+}
