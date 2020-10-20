@@ -49,6 +49,89 @@ main:before {
     background-size: cover;
 }
 
+.menu-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 10;
+}
+
+.menu-btn__btn {
+    transition: 0.2s;
+    position: relative;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 90%);
+}
+
+.menu-btn__btn:hover {
+    transition: 0.2s;
+    background-color: #00FF00;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 90%);
+    z-index: 8;
+}
+
+.menu__wrapper {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+    color: #FFFFFF;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 10px;
+}
+
+
+
+.menu a {
+    padding: 3px 0;
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu a:hover {
+    transition: 0.2s;
+    background-color: #ffa07a;
+}
+
+
+.menu a span {
+    display: inline-block;
+    width: 350px;
+}
+
+.menu img {
+    display: none;
+}
+
+
 header {
     min-height: 70px;
 }
@@ -766,8 +849,51 @@ nav li a:hover {
 .access-box {
     margin: 0 auto;
     padding: 20px;
-    width: 800px;
+    width: 600px;
+    text-align: left;
     background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.access-box__name {
+    margin: 30px 0 10px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666666;
+}
+
+.access-box__gray {
+    padding: 10px;
+    color: #696969;
+    background-color: rgba(128, 128, 128, 20%);
+}
+
+.access-box .mid {
+    background-color: rgba(128, 128, 128, 10%);
+}
+
+.access-box__link {
+    transition: 0.1s;
+    margin: 30px auto 20px auto;
+    padding: 10px 20px;
+    width: 80px;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 60%);
+    border-radius: 20px;
+}
+
+.access-box__link:hover {
+    transition: 0.1s;
+    background-color: rgba(0, 0, 255, 40%);
+}
+
+.access-box__link a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .ggmap {
