@@ -99,3 +99,19 @@ p {
     text-align: center;
     font-size: 17px;
 }
+
+@media screen and (max-width: 959px) and (min-width:560px) {
+    /* タブレットレイアウト */
+    /*
+    ここに記載したCSSは上書きされる
+    そのため色を始めとした上書きを必要としないものは記載しない
+    */
+}
+
+@media screen and (max-width: 559px) {
+    /* スマホレイアウト */
+    /*
+    ここに記載したCSSは上書きされる
+    そのため色を始めとした上書きを必要としないものは記載しない
+    */
+}

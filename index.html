@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>第48回 芝浦祭</title>
 
+
     <!--  レスポンシブに対応するための設定  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -30,6 +31,8 @@
     <!--    ファビコン    -->
     <link rel="icon" href="images/48th_logo_Green.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/48th_logo_Green.png">
+    <!--  デスクリプション  -->
+    <meta name="description" content="芝浦工業大学祭．第48回芝浦祭『絵本の世界』公式サイト．2020年11月1日(日)-3日(火)の3日間に渡り当ホームページにてオンライン開催決定">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146765784-1"></script>
@@ -58,7 +61,7 @@
                         <li><a href="html/page_time-table.html">MainStage</a></li>
                         <li><a href="html/page_geinou.html">Artist</a></li>
                         <li class="nav-divide nav-jump" name="#sec-access"><a href="#">Access</a></li>
-                        <li class="nav-contact"><a href="#">Contact</a></li>
+                        <li class="nav-contact nav-jump" name="#sec-contact"><a href="#">Contact</a></li>
                     </ul>
                     <img src="images/48th_logo_Green.png" class="logoL1">
                     <img src="images/48th_logo_Green.png" class="logoR1">
@@ -104,23 +107,6 @@
                 <img src="images/vector-side-2.png">
             </div>
         </div>
-        <script>
-            $(function() {
-                $('.menu-btn').on('click', function() {
-                    $('.menu').fadeToggle(200);
-                })
-                $('.menu').on('click', function() {
-                    $('.menu').fadeToggle(200);
-                })
-                $('.nav-jump').on('click', function() {
-                    let id_name = $(this).attr("name");
-                    $("html,body").animate({
-                        scrollTop: $(id_name).offset().top
-                    }, 800);
-                })
-            });
-
-        </script>
 
         <div class="title-wrapper">
             <div class="main-ropeL1">
@@ -330,9 +316,11 @@
                                 <a href="https://www.shibaura-it.ac.jp/access/toyosu.html" target="_blank">Detail</a>
                             </div>
                         </div>
+                        <!--
                         <div class="ggmap">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6687051479475!2d139.79266191562738!3d35.660533180199266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889a07930e2f9%3A0x62e41ee20b961991!2z6Iqd5rWm5bel5qWt5aSn5a2m!5e0!3m2!1sja!2sjp!4v1593145739480!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
+-->
                     </div>
                 </section>
                 <div class="main-dia">
@@ -348,9 +336,27 @@
                         <img src="images/vector-sword-R.png">
                     </div>
                     <div class="companies-wrapper">
-                        <a href="https://www.cosmo-agency.co.jp"><img src="images/companies/cosmo.jpg"></a>
-                        <a href="https://www.canon-electec.co.jp"><img src="images/companies/canon.png"></a>
-                        <a href="https://www.sit-roompia.jp"><img src="images/companies/seikyo.gif"></a>
+                        <a href="https://www.cosmo-agency.co.jp" target="_blank"><img src="images/companies/cosmo.jpg"></a>
+                        <a href="https://www.canon-electec.co.jp" target="_blank"><img src="images/companies/canon.png"></a>
+                        <a href="https://www.sit-roompia.jp" target="_blank"><img src="images/companies/seikyo.gif"></a>
+                    </div>
+                </section>
+
+                <section class="sec-contact" id="sec-contact">
+                    <div class="sectitle-wrapper">
+                        <img src="images/vector-sword-L1.png">
+                        <h5>Contact</h5>
+                        <img src="images/vector-sword-R.png">
+                    </div>
+                    <div class="companies-wrapper" style="display: flex; justify-content: center;">
+                        <a href="https://twitter.com/shibaurasai" style="margin: 0 30px; text-decoration: none; text-align: center;" target="_blank">
+                            <img src="images/icon_twitter.png" style="width: 100px; height: 100px;">
+                            <div style="font-size: 18px; font-weight: bold; color: #666;text-align: center;">公式Twitter</div>
+                        </a>
+                        <a href="https://instagram.com/shibaurasai?igshid=b57mw3wo1kfg" style="margin: 0 30px;  text-decoration: none; text-align: center;" target="_blank">
+                            <img src="images/icon_insta.png" style="width: 100px; height: 100px;">
+                            <div style="font-size: 18px; font-weight: bold; color: #666;text-align: center;">公式Instagram</div>
+                        </a>
                     </div>
                 </section>
             </div>
@@ -401,5 +407,22 @@
         <p class="copy">&copy;第48回芝浦祭実行委員会</p>
     </footer>
 </body>
+<script>
+    $(function() {
+        $('.menu-btn').on('click', function() {
+            $('.menu').fadeToggle(200);
+        })
+        $('.menu').on('click', function() {
+            $('.menu').fadeToggle(200);
+        })
+        $('.nav-jump').on('click', function() {
+            let id_name = $(this).attr("name");
+            $("html,body").animate({
+                scrollTop: $(id_name).offset().top
+            }, 800);
+        })
+    });
+
+</script>
 
 </html>
