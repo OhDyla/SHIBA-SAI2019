@@ -337,7 +337,7 @@ footer a:hover {
     */
 
     .main-contents {
-
+        width: 550px !important;
         grid-column: 3;
         grid-row: 1/-1;
     }
