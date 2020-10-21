@@ -1761,8 +1761,64 @@ footer a:hover {
     }
 
 
-
     main {}
+
+
+    .menu-btn {
+        bottom: 50px;
+        right: 20px;
+    }
+
+    .menu-btn__btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu {
+        padding-top: 30px;
+    }
+
+    .menu__wrapper {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .menu__wrapper hr {
+        width: 180px !important;
+    }
+
+    .menu h2 {
+        font-size: 24px;
+    }
+
+    .menu ul {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        padding: 3px 0;
+        font-size: 24px;
+    }
+
+    .menu a:hover {
+        transition: 0.2s;
+        background-color: #ffa07a;
+    }
+
+
+    .menu a span {
+        display: inline-block;
+        width: 180px;
+    }
+
+    .menu img {
+        display: none;
+    }
 
     header {
         /*        min-height: 70px;*/
@@ -2448,6 +2504,28 @@ footer a:hover {
 
 
 @media screen and (max-width: 359px) {
+
+    .menu {
+        padding-top: 30px;
+    }
+
+
+    .menu h2 {
+        font-size: 24px;
+    }
+
+    .menu ul {
+        margin: 5px 0;
+    }
+
+    .menu li {
+        margin-top: 5px;
+    }
+
+    .menu a {
+        padding: 3px 0;
+        font-size: 18px;
+    }
 
     .logoL1 {
         top: 10px;
