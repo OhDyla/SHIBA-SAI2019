@@ -94,6 +94,7 @@ nav li a:hover {
 
 .main-wrapper {
     margin-top: 100px;
+    padding-bottom: 100px;
     display: grid;
     grid-template-columns: 100px auto 900px auto 100px;
     grid-template-rows: [sidebar] auto [other] auto;
@@ -321,7 +322,6 @@ footer a:hover {
 
     .main-wrapper {
         margin-top: 100px;
-        margin-bottom: 100px;
         display: grid;
         grid-template-columns: 70px auto 550px auto 70px;
         grid-template-rows: [sidebar] auto [other] auto;
@@ -530,7 +530,6 @@ footer a:hover {
 
     .main-wrapper {
         margin-top: 50px;
-        margin-bottom: 100px;
         display: grid;
         grid-template-columns: 50px auto 270px auto 50px;
         grid-template-rows: [sidebar] auto [other] auto;
