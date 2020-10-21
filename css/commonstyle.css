@@ -786,43 +786,6 @@ nav li a:hover {
 }
 
 
-/* ---------- ---------- --------- */
-/* 大学セクション */
-
-.sit-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.sit1,
-.sit2,
-.sit3 {
-    margin: 20px;
-    width: 25%;
-}
-
-.sit1-cont,
-.sit2-cont,
-.sit3-cont {
-    padding: 15px;
-    background-color: rgba(40, 25, 15, 60%);
-    box-shadow: 0 0 5px black;
-}
-
-.sit-wrapper h6 {
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Sawarabi Mincho', sans-serif;
-}
-
-.sit-wrapper p {
-    padding: 10px;
-    color: black;
-    font-weight: bold;
-    background-color: rgba(238, 232, 170, 70%);
-}
 
 /* ---------- ---------- --------- */
 /* アクセスセクション */
@@ -923,6 +886,42 @@ nav li a:hover {
     margin: 10px;
     height: 250px;
     width: auto;
+}
+
+/* ---------- ---------- --------- */
+/* コンタクトセクション */
+
+.contact__wrapper {
+    padding-bottom: 80px;
+}
+
+.contact__href {
+    margin: 0 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact__href-img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact__href-sit {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.contact__href-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
 }
 
 
@@ -1766,12 +1765,13 @@ footer a:hover {
 
     .menu-btn {
         bottom: 50px;
-        right: 20px;
+        right: 30px;
     }
 
     .menu-btn__btn {
-        width: 40px;
-        height: 40px;
+        padding: 15px;
+        width: 35px;
+        height: 35px;
     }
 
     .menu {
@@ -1802,7 +1802,7 @@ footer a:hover {
 
     .menu a {
         padding: 3px 0;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .menu a:hover {
@@ -2402,6 +2402,39 @@ footer a:hover {
         margin: 10px;
         width: 250px;
         height: auto;
+    }
+
+
+    /* ---------- ---------- --------- */
+    /* ---------- ---------- --------- */
+    /* コンタクトセクション */
+
+    .contact__wrapper {
+        padding: 20px 0 80px 0;
+    }
+
+    .contact__href {
+        margin: 0 15px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+    .contact__href-sit {
+        margin: 0 auto;
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+    }
+
+    .contact__href-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact__href-title {
+        display: none;
     }
 
 
