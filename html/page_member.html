@@ -9,20 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!--  フォントのリンク  -->
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 
     <!--  アイコンのリンク  -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
 
     <!--    cssリンク   -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/page_member.css">
 
     <!--    JavaScriptリンク    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!--    ファビコン    -->
+    <link rel="icon" href="images/48th_logo_Green.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/48th_logo_Green.png">
+    <!--  デスクリプション  -->
+    <meta name="description" content="第48回芝浦祭 MemberPage">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146765784-1"></script>
@@ -35,19 +38,846 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-146765784-1');
+
     </script>
 
 </head>
 
 <body>
-
     <main>
+        <ul class="top-nav">
+            <li class="top-nav__li is-active" name="#kyokutyo">局長陣</li>
+            <li class="top-nav__li" name="#kikaku">企</li>
+            <li class="top-nav__li" name="#seisaku">制</li>
+            <li class="top-nav__li" name="#koho">広</li>
+            <li class="top-nav__li" name="#soumu">総</li>
+            <li class="top-nav__li" name="#kaikei">会</li>
+            <li class="top-nav__li" name="#keibi">警</li>
+        </ul>
+        <div class="backbord">
+            <div class="backbord__filter"></div>
+            <img class="backbord__logo" src="../images/48th_logo_White.png">
+            <div class="backbord__title">第48回<br>芝浦祭実行委員会<br>MemberPage</div>
+        </div>
 
-        <h5>広報局</h5>
+        <h5 id="kyokutyo">第48回局長陣</h5>
         <div class="dep-wrapper">
             <div class="dep-inner">
-                <div class="member member-web">
-                    <img src="/images/member/mem-ko-web2mak.JPG" class="member-img">
+                <div class="member">
+                    <img src="../images/page_member/mem-48_1.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">48回芝浦祭委員長</div>
+                        <div class="member-alph">OHKAWARA&nbsp;&nbsp;Masaya</div>
+                        <div class="member-name">大河原　誠也</div>
+                        <div class="member-nickname">まさや</div>
+                        <div class="member-faculty">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="../images/page_member/mem-48_2.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">48回芝浦祭副委員長</div>
+                        <div class="member-alph">HIDAKA&nbsp;&nbsp;Mai</div>
+                        <div class="member-name">日高　麻衣</div>
+                        <div class="member-nickname">まい●〜る♪</div>
+                        <div class="member__other-wrapper">
+                            <div class="member-sns">
+                                <a href="https://www.youtube.com/channel/UCx1CUY0ZPEh3YKnvLm_brDA" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="member-faculty">シス理・生命</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="member" style="background-color: #FFDAB9">
+                    <img src="../images/page_member/mem-48kikaku1.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局長</div>
+                        <div class="member-alph is-color-black">MIYATA&nbsp;&nbsp;Tomomi</div>
+                        <div class="member-name is-color-black">宮田　朋実</div>
+                        <div class="member-nickname is-color-black">ともみ</div>
+                        <div class="member-faculty is-color-black">シス理・生命</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-web" style="background-color: #ffc0cb">
+                    <img src="../images/page_member/mem-48kikaku2.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">副企画局長</div>
+                        <div class="member-alph is-color-black">TAMURA&nbsp;&nbsp;Chihiro</div>
+                        <div class="member-name is-color-black">田村　千紘</div>
+                        <div class="member-nickname is-color-black">ちひろ / たむたむ</div>
+                        <div class="member-faculty is-color-black">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-3">
+                    <img src="../images/page_member/mem-48seisaku.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局長</div>
+                        <div class="member-alph">KATO&nbsp;&nbsp;Riho</div>
+                        <div class="member-name">加藤　里歩</div>
+                        <div class="member-nickname">りほ / 副事務総長</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member" style="background-color: #87CEFA;">
+                    <img src="../images/page_member/mem-48koho.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局長</div>
+                        <div class="member-alph">AMANO&nbsp;&nbsp;Shota</div>
+                        <div class="member-name">天野　翔太</div>
+                        <div class="member-nickname">あましょう</div>
+                        <div class="member-faculty">工・機能工</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member" style="background-color: #B0C4DE">
+                    <img src="../images/page_member/mem-48soumu.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局長</div>
+                        <div class="member-alph">SAKAMOTO&nbsp;&nbsp;Mana</div>
+                        <div class="member-name">坂本　真菜</div>
+                        <div class="member-nickname">まな / 事務総長</div>
+                        <div class="member-faculty">工・情報通信</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei-3">
+                    <img src="../images/page_member/mem-48kaikei.gif" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局長</div>
+                        <div class="member-alph">YAMASHITA&nbsp;&nbsp;Kouhei</div>
+                        <div class="member-name">山下　航平</div>
+                        <div class="member-nickname">やまちゃん / DJ Koh</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-keibi-3">
+                    <img src="../images/page_member/mem-48keibi.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局長</div>
+                        <div class="member-alph">KOBAYASHI&nbsp;&nbsp;Hiroki</div>
+                        <div class="member-name">小林　大樹</div>
+                        <div class="member-nickname">ひろき</div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="kikaku">企画局 1</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member" style="background-color: #FFDAB9">
+                    <img src="../images/page_member/mem-48kikaku1.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局長</div>
+                        <div class="member-alph is-color-black">MIYATA&nbsp;&nbsp;Tomomi</div>
+                        <div class="member-name is-color-black">宮田　朋実</div>
+                        <div class="member-nickname is-color-black">ともみ</div>
+                        <div class="member-faculty is-color-black">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-web" style="background-color: #ffc0cb">
+
+                    <img src="../images/page_member/mem-48kikaku2.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">副企画局長</div>
+                        <div class="member-alph is-color-black">TAMURA&nbsp;&nbsp;Chihiro</div>
+                        <div class="member-name is-color-black">田村　千紘</div>
+                        <div class="member-nickname is-color-black">ちひろ / たむたむ</div>
+                        <div class="member-faculty is-color-black">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-msmr">
+                    <img src="../images/page_member/mem-ki-msmr2ryb.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 2年★</div>
+                        <div class="member-alph">RYUBA&nbsp;&nbsp;Hiromiti</div>
+                        <div class="member-name">柳葉　裕道</div>
+                        <div class="member-nickname">ひろみち</div>
+                        <div class="member-faculty">工・機械</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle">
+                    <img src="../images/page_member/mem-ki-colle2sai.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 2年★</div>
+                        <div class="member-alph">SAIDA&nbsp;&nbsp;Hiroki</div>
+                        <div class="member-name">齋田　浩生</div>
+                        <div class="member-nickname">ｻｲﾀﾞ / ぱぱ</div>
+                        <div class="member-faculty">シス理・電情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou">
+                    <img src="../images/page_member/mem-ki-gei2sng.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 2年★</div>
+                        <div class="member-alph is-color-black">OGINO&nbsp;&nbsp;Shingo</div>
+                        <div class="member-name is-color-black">荻野　慎吾</div>
+                        <div class="member-nickname is-color-black">しんご</div>
+                        <div class="member-faculty is-color-black">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-daikou">
+                    <img src="../images/page_member/mem-ki-dai2mas.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 2年★</div>
+                        <div class="member-alph">MORONO&nbsp;&nbsp;Masashi</div>
+                        <div class="member-name">諸野　正志</div>
+                        <div class="member-nickname">まさし</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-msmr">
+                    <img src="../images/page_member/mem-ki-msmr2mar.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 2年</div>
+                        <div class="member-alph">MARUICHI&nbsp;&nbsp;Masahiro</div>
+                        <div class="member-name">丸一　真大</div>
+                        <div class="member-nickname">まる</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle">
+                    <img src="../images/page_member/mem-ki-colle2sab.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 2年</div>
+                        <div class="member-alph">SABURI&nbsp;&nbsp;Wakana</div>
+                        <div class="member-name">佐分　わか奈</div>
+                        <div class="member-nickname">さぶりん</div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou">
+                    <img src="../images/page_member/mem-ki-gei2nen.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 2年</div>
+                        <div class="member-alph is-color-black">ISHIZUKA&nbsp;&nbsp;Nene</div>
+                        <div class="member-name is-color-black">石塚　寧音</div>
+                        <div class="member-nickname is-color-black">ねね</div>
+                        <div class="member-faculty is-color-black">デザ工・生プロ</div>
+                    </div>
+                </div>
+                <div class="member member-daikou">
+                    <img src="../images/page_member/mem-ki-dai2dat.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 2年</div>
+                        <div class="member-alph">DATE&nbsp;&nbsp;Yoshinobu</div>
+                        <div class="member-name">伊達　好信</div>
+                        <div class="member-nickname">ダテ↑サン</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-msmr">
+                    <img src="../images/page_member/mem-ki-msmr2bab.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 2年</div>
+                        <div class="member-alph">BABA&nbsp;&nbsp;Nanako</div>
+                        <div class="member-name">馬場　奈菜子</div>
+                        <div class="member-nickname">ななこ</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle">
+                    <img src="../images/page_member/mem-ki-colle2ris.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 2年</div>
+                        <div class="member-alph">KOSHIMIZU&nbsp;&nbsp;Risa</div>
+                        <div class="member-name">輿水　理咲</div>
+                        <div class="member-nickname">りさ</div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou">
+                    <img src="../images/page_member/mem-ki-gei2fum.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 2年</div>
+                        <div class="member-alph is-color-black">KOBAYASHI&nbsp;&nbsp;Fumiya</div>
+                        <div class="member-name is-color-black">小林　郁也</div>
+                        <div class="member-nickname is-color-black">フミヤ</div>
+                        <div class="member-faculty is-color-black">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-daikou">
+                    <img src="../images/page_member/mem-ki-dai2syn.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 2年</div>
+                        <div class="member-alph">KINOSHITA&nbsp;&nbsp;Syun</div>
+                        <div class="member-name">木下　隼</div>
+                        <div class="member-nickname">シュン</div>
+                        <div class="member-faculty">工・機械</div>
+                    </div>
+                </div>
+                <div class="member member-msmr">
+                    <img src="../images/page_member/mem-ki-msmr2ina.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 2年</div>
+                        <div class="member-alph">INAGAKI&nbsp;&nbsp;Kaori</div>
+                        <div class="member-name">稲垣　圭織</div>
+                        <div class="member-nickname">かおり</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 2年</div>
+                        <div class="member-alph">ISHII&nbsp;&nbsp;Masato</div>
+                        <div class="member-name">石井　雅人</div>
+                        <div class="member-nickname">まさと</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou">
+                    <img src="../images/page_member/mem-ki-gei2kaz.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 2年</div>
+                        <div class="member-alph is-color-black">KIMURA&nbsp;&nbsp;Kazuaki</div>
+                        <div class="member-name is-color-black">木村　和彰</div>
+                        <div class="member-nickname is-color-black">カズアキ</div>
+                        <div class="member-faculty is-color-black">シス理・機制</div>
+                    </div>
+                </div>
+                <div class="member member-daikou-1">
+                    <img src="../images/page_member/mem-ki-dai1shi.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 1年</div>
+                        <div class="member-alph">SHIMA&nbsp;&nbsp;Yukitaka</div>
+                        <div class="member-name">志摩　幸隆</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・電情</div>
+                    </div>
+                </div>
+                <div class="member member-msmr-1">
+                    <img src="../images/page_member/mem-ki-msmr1umi.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 1年</div>
+                        <div class="member-alph">UMINO&nbsp;&nbsp;Yuta</div>
+                        <div class="member-name">海野　優太</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle-1">
+                    <img src="../images/page_member/mem-ki-colle1ohk.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 1年</div>
+                        <div class="member-alph">OHKI&nbsp;&nbsp;Yuta</div>
+                        <div class="member-name">大木　勇汰</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・材料</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou-1">
+                    <img src="../images/page_member/mem-ki-gei1ue.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 1年</div>
+                        <div class="member-alph is-color-black">UESUGI&nbsp;&nbsp;Akinari</div>
+                        <div class="member-name is-color-black">上杉　明勢</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">工・材料</div>
+                    </div>
+                </div>
+                <div class="member member-daikou-1">
+                    <img src="../images/page_member/mem-ki-dai1oka.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 1年</div>
+                        <div class="member-alph">OKADA&nbsp;&nbsp;Chinami</div>
+                        <div class="member-name">岡田　ちなみ</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-msmr-1">
+                    <img src="../images/page_member/mem-ki-msmr1ymd.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 1年</div>
+                        <div class="member-alph">YAMADA&nbsp;&nbsp;Ikuho</div>
+                        <div class="member-name">山田　育穂</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle-1">
+                    <img src="../images/page_member/mem-ki-colle1tuj.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 1年</div>
+                        <div class="member-alph">TSUJIMOTO&nbsp;&nbsp;Kunihide</div>
+                        <div class="member-name">辻元　匡秀</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou-1">
+                    <img src="../images/page_member/mem-ki-gei1yos.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 1年</div>
+                        <div class="member-alph is-color-black">YOSHIMURA&nbsp;&nbsp;Shou</div>
+                        <div class="member-name is-color-black">吉村　将</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-daikou-1">
+                    <img src="../images/page_member/mem-ki-dai1tkh.JPEG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 大講義 1年</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;Moe</div>
+                        <div class="member-name">高橋　萌</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-msmr-1">
+                    <img src="../images/page_member/mem-ki-msmr1isi.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 1年</div>
+                        <div class="member-alph">ISHIKAWA&nbsp;&nbsp;Nanami</div>
+                        <div class="member-name">石川　菜々美</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle-1">
+                    <img src="../images/page_member/mem-ki-colle1ono.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 1年</div>
+                        <div class="member-alph">ONO&nbsp;&nbsp;Wakako</div>
+                        <div class="member-name">小野　和佳子</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou-1">
+                    <img src="../images/page_member/mem-ki-gei1toy.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 1年</div>
+                        <div class="member-alph is-color-black">TOYOOKA&nbsp;&nbsp;Karin</div>
+                        <div class="member-name is-color-black">豊岡　花梨</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-daikou-1" style="background-color: transparent">
+                </div>
+                <div class="member member-msmr-1">
+                    <img src="../images/page_member/mem-ki-msmr1kaw.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 1年</div>
+                        <div class="member-alph">KAWASHIMA&nbsp;&nbsp;Mizuki</div>
+                        <div class="member-name">河島　瑞希</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle-1">
+                    <img src="../images/page_member/mem-ki-colle1tak.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 芝これ 1年</div>
+                        <div class="member-alph">TAKEMOTO&nbsp;&nbsp;Hina</div>
+                        <div class="member-name">岳本　陽菜</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-geinou-1">
+                    <img src="../images/page_member/mem-ki-gei1sej.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 芸能 1年</div>
+                        <div class="member-alph is-color-black">SEJIMA&nbsp;&nbsp;Mitsuki</div>
+                        <div class="member-name is-color-black">瀬島　みつき</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-daikou-1" style="background-color: transparent">
+                </div>
+                <div class="member member-msmr-1">
+                    <img src="../images/page_member/mem-ki-msmr1shi.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 MsMr 1年</div>
+                        <div class="member-alph">SHIOTA&nbsp;&nbsp;Mao</div>
+                        <div class="member-name">塩田　真央</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-shibacolle-1" style="background-color: transparent;"></div>
+            </div>
+        </div>
+
+        <h5 id="kikaku">企画局 2</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member member-sone">
+                    <img src="../images/page_member/mem-ki-sone2kaz.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 S-1 2年★</div>
+                        <div class="member-alph">HOSAKA&nbsp;&nbsp;Kazuki</div>
+                        <div class="member-name">保坂　和樹</div>
+                        <div class="member-nickname">かずき</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-bingo">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 2年★</div>
+                        <div class="member-alph is-color-black">SASAKI&nbsp;&nbsp;Aoi</div>
+                        <div class="member-name is-color-black">佐々木　碧</div>
+                        <div class="member-nickname is-color-black">あおい</div>
+                        <div class="member-faculty is-color-black">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-bingo">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 2年</div>
+                        <div class="member-alph is-color-black">ITO&nbsp;&nbsp;Takaya</div>
+                        <div class="member-name is-color-black">伊藤　貴哉</div>
+                        <div class="member-nickname is-color-black">たかや / たかちゃん</div>
+                        <div class="member-faculty is-color-black">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-rock">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 ロッキン 2年★</div>
+                        <div class="member-alph">KOBAYASHI&nbsp;&nbsp;Hinako</div>
+                        <div class="member-name">小林　雛子</div>
+                        <div class="member-nickname">ひな / ひなこ</div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-sone">
+                    <img src="../images/page_member/mem-ki-sone2kei.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 S-1 2年</div>
+                        <div class="member-alph">YAMASHITA&nbsp;&nbsp;Keigo</div>
+                        <div class="member-name">山下　慶悟</div>
+                        <div class="member-nickname">ケーゴ</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-bingo">
+                    <img src="../images/page_member/mem-ki-bin2azu.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 2年</div>
+                        <div class="member-alph is-color-black">NIIZATO&nbsp;&nbsp;Azumi</div>
+                        <div class="member-name is-color-black">新里　あづみ</div>
+                        <div class="member-nickname is-color-black">あづみ</div>
+                        <div class="member-faculty is-color-black">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-bingo">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 2年</div>
+                        <div class="member-alph is-color-black">SAITO&nbsp;&nbsp;Nanako</div>
+                        <div class="member-name is-color-black">齋藤　菜奈子</div>
+                        <div class="member-nickname is-color-black">ななこ</div>
+                        <div class="member-faculty is-color-black">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-rock-1">
+                    <img src="../images/page_member/mem-ki-roc1yos.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 ロッキン 1年</div>
+                        <div class="member-alph">YOSHIKAWA&nbsp;&nbsp;Ryosuke</div>
+                        <div class="member-name">吉川　涼介</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・機械</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-sone-1">
+                    <img src="../images/page_member/mem-ki-sone1sin.png" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 S-1 1年</div>
+                        <div class="member-alph">KIMURA&nbsp;&nbsp;Masato</div>
+                        <div class="member-name">木村　真人</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・機械</div>
+                    </div>
+                </div>
+                <div class="member member-bingo-1">
+                    <img src="../images/page_member/mem-ki-bin1uch.PNG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 1年</div>
+                        <div class="member-alph is-color-black">UCHIBORI&nbsp;&nbsp;Mai</div>
+                        <div class="member-name is-color-black">内堀　真衣</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-bingo-1">
+                    <img src="../images/page_member/mem-ki-bin1huj.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 1年</div>
+                        <div class="member-alph is-color-black">FUJITA&nbsp;&nbsp;Shintaro</div>
+                        <div class="member-name is-color-black">藤田　進太郎</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-rock-1">
+                    <img src="../images/page_member/mem-ki-roc1kan.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 ロッキン 1年</div>
+                        <div class="member-alph">KANNO&nbsp;&nbsp;Takumi</div>
+                        <div class="member-name">菅野　拓己</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・電情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-sone-1">
+                    <img src="../images/page_member/mem-ki-sone1rih.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 S-1 1年</div>
+                        <div class="member-alph">KUSANO&nbsp;&nbsp;Riho</div>
+                        <div class="member-name">草野　利穂</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-bingo-1">
+                    <img src="../images/page_member/mem-ki-bin1yos.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep is-color-black">企画局 BINGO 1年</div>
+                        <div class="member-alph is-color-black">YOSHIZAKI&nbsp;&nbsp;Hinako</div>
+                        <div class="member-name is-color-black">吉崎　陽菜子</div>
+                        <div class="member-nickname is-color-black"></div>
+                        <div class="member-faculty is-color-black">デザ工・生プロ</div>
+                    </div>
+                </div>
+                <div class="member" style="background-color: transparent;">
+                </div>
+                <div class="member member-rock-1">
+                    <img src="../images/page_member/mem-ki-roc1ohn.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">企画局 ロッキン 1年</div>
+                        <div class="member-alph">OHBA&nbsp;&nbsp;</div>
+                        <div class="member-name">大庭　楓花</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">デザ工・生プロ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="seisaku">制作局</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member member-seisaku-3">
+                    <img src="../images/page_member/mem-48seisaku.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局長</div>
+                        <div class="member-alph">KATO&nbsp;&nbsp;Riho</div>
+                        <div class="member-name">加藤　里歩</div>
+                        <div class="member-nickname">りほ / ｶﾄｳｻﾝ</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">KANEKO&nbsp;&nbsp;Mai</div>
+                        <div class="member-name">金子　舞</div>
+                        <div class="member-nickname">かねこ</div>
+                        <div class="member-faculty">デザ工・生プロ</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/mem-se-2fuj.png" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">FUJITA&nbsp;&nbsp;Syunpei</div>
+                        <div class="member-name">藤田　俊平</div>
+                        <div class="member-nickname">ｼｭﾝﾍﾟｲ / Pay</div>
+                        <div class="member-faculty">工・情報通信</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/mem-se-2kam.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">KAMEOKA&nbsp;&nbsp;Kaisei</div>
+                        <div class="member-name">亀岡　快晴</div>
+                        <div class="member-nickname">カイセー</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/mem-se-2tan.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">TANIFUJI&nbsp;&nbsp;Naoto</div>
+                        <div class="member-name">谷藤　尚斗</div>
+                        <div class="member-nickname">なおちゅ</div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/mem-se-2sib.PNG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">SHIBATA&nbsp;&nbsp;Tomoki</div>
+                        <div class="member-name">柴田　友輝</div>
+                        <div class="member-nickname">ﾄﾓｷ</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-seisaku">
+                    <img src="../images/page_member/mem-se-2yan.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 2年</div>
+                        <div class="member-alph">YANAGIDA&nbsp;&nbsp;Haruka</div>
+                        <div class="member-name">柳田　時佳</div>
+                        <div class="member-nickname">ﾔﾅｷﾞﾀﾞﾊﾙｶ</div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1tud.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">TUZUKI&nbsp;&nbsp;Takemasa</div>
+                        <div class="member-name">都築　武将</div>
+                        <div class="member-nickname">ﾌﾞｼｮｳ</div>
+                        <div class="member-faculty">工・材料</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1ou.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">OU&nbsp;&nbsp;</div>
+                        <div class="member-name">王　玺毓</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・材料</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1tom.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">TOMITA&nbsp;&nbsp;Kouhei</div>
+                        <div class="member-name">冨田　航平</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・材料</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1sas.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">SASAKI&nbsp;&nbsp;Yasuyuki</div>
+                        <div class="member-name">佐々木　康佑</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1kur.PNG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">KURITA&nbsp;&nbsp;</div>
+                        <div class="member-name">栗田　遙生</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1kub.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">KUBOTA&nbsp;&nbsp;Chisato</div>
+                        <div class="member-name">久保田　知里</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1nkm.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">NAKAMURA&nbsp;&nbsp;Yusaku</div>
+                        <div class="member-name">中村　優作</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1mor.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">MORI&nbsp;&nbsp;Ren</div>
+                        <div class="member-name">森　蓮</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">デザ工・生プロ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1ino.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">INOUE&nbsp;&nbsp;Mana</div>
+                        <div class="member-name">井上　茉南</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-seisaku-1">
+                    <img src="../images/page_member/mem-se-1mar.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">制作局 1年</div>
+                        <div class="member-alph">MARUO&nbsp;&nbsp;Chisa</div>
+                        <div class="member-name">圓尾　知紗</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="koho">広報局</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member" style="background-color: #87CEFA;">
+                    <img src="../images/page_member/mem-48koho.JPG" class="member-img">
                     <div class="member-detail">
                         <div class="member-dep">広報局長</div>
                         <div class="member-alph">AMANO&nbsp;&nbsp;Shota</div>
@@ -57,19 +887,25 @@
                     </div>
                 </div>
                 <div class="member member-web">
-                    <img src="/images/member/mem-ko-web2ohd.JPG" class="member-img">
+                    <img src="../images/page_member/mem-ko-web2ohd.JPG" class="member-img">
                     <div class="member-detail">
-                        <div class="member-dep">広報局 Web 2年</div>
+                        <div class="member-dep">広報局 Web 2年★</div>
                         <div class="member-alph">OHDAIRA&nbsp;&nbsp;Kentaro</div>
                         <div class="member-name">大平　健太郎</div>
                         <div class="member-nickname">だいら</div>
-                        <div class="member-faculty">工・情報工</div>
+                        <div class="member__other-wrapper">
+                            <div class="member-sns">
+                                <a href="https://www.instagram.com/orientpro/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/orientzero" target="_blank"><i class="fab fa-twitter fa-1x"></i></a>
+                            </div>
+                            <div class="member-faculty">工・情報工</div>
+                        </div>
                     </div>
                 </div>
                 <div class="member member-pamph">
-                    <img src="/images/member/mem-ko-pnh2nkn.jpg" class="member-img">
+                    <img src="../images/page_member/mem-ko-pnh2nkn.jpg" class="member-img">
                     <div class="member-detail">
-                        <div class="member-dep">広報局 パンフ 2年</div>
+                        <div class="member-dep">広報局 パンフ 2年★</div>
                         <div class="member-alph">NAKANO&nbsp;&nbsp;Yuta</div>
                         <div class="member-name">中野　雄太</div>
                         <div class="member-nickname">なゆ / なな</div>
@@ -77,7 +913,7 @@
                     </div>
                 </div>
                 <div class="member member-pamph">
-                    <img src="/images/member/mem-ko-pnh2mtm.JPG" class="member-img">
+                    <img src="../images/page_member/mem-ko-pnh2mtm.JPG" class="member-img">
                     <div class="member-detail">
                         <div class="member-dep">広報局 パンフ 2年</div>
                         <div class="member-alph">MATSUMOTO&nbsp;&nbsp;Kotaro</div>
@@ -89,7 +925,7 @@
             </div>
             <div class="dep-inner">
                 <div class="member member-web">
-                    <img src="/images/member/mem-ko-web2mak.JPG" class="member-img">
+                    <img src="../images/page_member/mem-ko-web2mak.JPG" class="member-img">
                     <div class="member-detail">
                         <div class="member-dep">広報局 Web 2年</div>
                         <div class="member-alph">MAKISHIMA&nbsp;&nbsp;Shuntaro</div>
@@ -98,14 +934,588 @@
                         <div class="member-faculty">シス理・電情</div>
                     </div>
                 </div>
+                <div class="member member-web">
+                    <img src="../images/page_member/mem-ko-web2ish.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 Web 2年</div>
+                        <div class="member-alph">ISHITOYA&nbsp;&nbsp;Ryusuke</div>
+                        <div class="member-name">石戸谷　隆輔</div>
+                        <div class="member-nickname">ちぇる</div>
+                        <div class="member-faculty">工・電子</div>
+                    </div>
+                </div>
                 <div class="member member-pamph">
-                    <img src="/images/member/mem-ko-pnh2mtm.JPG" class="member-img">
+                    <img src="../images/page_member/mem-ko-pnh2hse.jpg" class="member-img">
                     <div class="member-detail">
                         <div class="member-dep">広報局 パンフ 2年</div>
-                        <div class="member-alph">MATSUMOTO&nbsp;&nbsp;Kotaro</div>
-                        <div class="member-name">松本　康太郎</div>
-                        <div class="member-nickname">なんごく</div>
+                        <div class="member-alph">HASEGAWA&nbsp;&nbsp;Tatsuya</div>
+                        <div class="member-name">長谷川　達也</div>
+                        <div class="member-nickname">はせたつ / ぴょん</div>
                         <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-pamph">
+                    <img src="../images/page_member/mem-ko-pnh2ktk.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 2年</div>
+                        <div class="member-alph">KATSUKI&nbsp;&nbsp;Yuta</div>
+                        <div class="member-name">勝木　雄大</div>
+                        <div class="member-nickname">かつき / 北国</div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-web-1">
+                    <img src="../images/page_member/mem-ko-web1yon.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 Web 1年</div>
+                        <div class="member-alph">YONEYAMA&nbsp;&nbsp;Naoto</div>
+                        <div class="member-name">米山　奈央人</div>
+                        <div class="member-nickname">よねっち</div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+                <div class="member member-web-1">
+                    <img src="../images/page_member/mem-ko-web1don.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 Web 1年</div>
+                        <div class="member-alph">FUJIEDA&nbsp;&nbsp;Sae</div>
+                        <div class="member-name">藤枝　紗英</div>
+                        <div class="member-nickname">どんどん</div>
+                        <div class="member-faculty">デザ工・生プロ</div>
+                    </div>
+                </div>
+                <div class="member member-pamph-1">
+                    <img src="../images/page_member/mem-ko-pnh1myz.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 1年</div>
+                        <div class="member-alph">MIYAZAKI&nbsp;&nbsp;Momoka</div>
+                        <div class="member-name">宮崎　百花</div>
+                        <div class="member-nickname">ボス</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-pamph-1">
+                    <img src="../images/page_member/mem-ko-pnh1mzg.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 1年</div>
+                        <div class="member-alph">MIZOGUCHI&nbsp;&nbsp;Yumi</div>
+                        <div class="member-name">溝口　友海</div>
+                        <div class="member-nickname">ゆーみ</div>
+                        <div class="member-faculty">シス理・機制</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-web-1">
+                    <img src="../images/page_member/mem-ko-web1war.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 Web 1年</div>
+                        <div class="member-alph">KANOH&nbsp;&nbsp;Tomoki</div>
+                        <div class="member-name">狩野　智紀</div>
+                        <div class="member-nickname">ワロス</div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+                <div class="member member-web-1">
+                    <img src="../images/page_member/mem-ko-web1den.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 Web 1年</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;Kaede</div>
+                        <div class="member-name">高橋　楓</div>
+                        <div class="member-nickname">でんでん</div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+                <div class="member member-pamph-1">
+                    <img src="../images/page_member/mem-ko-pnh1kmb.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 1年</div>
+                        <div class="member-alph">KAMIKUBO&nbsp;&nbsp;Eri</div>
+                        <div class="member-name">上久保　衣梨</div>
+                        <div class="member-nickname">えり</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-pamph-1">
+                    <img src="../images/page_member/mem-ko-pnh1tkg.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 1年</div>
+                        <div class="member-alph">TAKAGI&nbsp;&nbsp;Yuma</div>
+                        <div class="member-name">高木　悠真</div>
+                        <div class="member-nickname">ゆーま</div>
+                        <div class="member-faculty">シス理・電情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-pamph-1" style="background-color: transparent">
+                </div>
+                <div class="member member-pamph-1" style="background-color: transparent">
+                </div>
+                <div class="member member-pamph-1">
+                    <img src="../images/page_member/mem-ko-pnh1tkh.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">広報局 パンフ 1年</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;Kosuke</div>
+                        <div class="member-name">髙橋　享介</div>
+                        <div class="member-nickname">こーすけ</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="soumu">総務局</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member" style="background-color: #B0C4DE">
+                    <img src="../images/page_member/mem-48soumu.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局長</div>
+                        <div class="member-alph">SAKAMOTO&nbsp;&nbsp;Mana</div>
+                        <div class="member-name">坂本　真菜</div>
+                        <div class="member-nickname">まな</div>
+                        <div class="member-faculty">工・情報通信</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu">
+                    <img src="../images/page_member/mem-so-kyo2tad.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室2年</div>
+                        <div class="member-alph">TADA&nbsp;&nbsp;Kazuki</div>
+                        <div class="member-name">多田　和生</div>
+                        <div class="member-nickname">ただちゃん</div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-yatai">
+                    <img src="../images/page_member/mem-so-yti2ri.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台2年</div>
+                        <div class="member-alph">LEE&nbsp;&nbsp;Yuje</div>
+                        <div class="member-name">李　諭宰</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・機械</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-eisei">
+                    <img src="../images/page_member/mem-so-eis2itu.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 衛生2年</div>
+                        <div class="member-alph">ITO&nbsp;&nbsp;Taichi</div>
+                        <div class="member-name">伊藤　太一</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・電情</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu">
+                    <img src="../images/page_member/mem-so-kyo2okd.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室2年</div>
+                        <div class="member-alph">OKADA&nbsp;&nbsp;Masaya</div>
+                        <div class="member-name">岡田　将弥</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+                <div class="member member-yatai">
+                    <img src="../images/page_member/mem-so-yti2tak.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台2年</div>
+                        <div class="member-alph">TAKEISHI&nbsp;&nbsp;Aya</div>
+                        <div class="member-name">武石　彩</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-eisei">
+                    <img src="../images/page_member/" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 衛生2年</div>
+                        <div class="member-alph">OKANO&nbsp;&nbsp;Tomonori</div>
+                        <div class="member-name">岡野 友紀</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu-1">
+                    <img src="../images/page_member/mem-so-kyo1knk.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室1年</div>
+                        <div class="member-alph">KANEKO&nbsp;&nbsp;</div>
+                        <div class="member-name">金子　竜大</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-yatai-1">
+                    <img src="../images/page_member/mem-so-yti1htk.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台1年</div>
+                        <div class="member-alph">&nbsp;&nbsp;Jun</div>
+                        <div class="member-name">畠山　淳</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-eisei-1">
+                    <img src="../images/page_member/mem-so-eis1tkhs.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 衛生1年</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;</div>
+                        <div class="member-name">髙橋　麻実</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu-1">
+                    <img src="../images/page_member/mem-so-kyo1nsgt.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室1年</div>
+                        <div class="member-alph">NISHIGUCHI&nbsp;&nbsp;Takumi</div>
+                        <div class="member-name">西口　拓実</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-yatai-1">
+                    <img src="../images/page_member/mem-so-yti1mto.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台1年</div>
+                        <div class="member-alph">MATSUO&nbsp;&nbsp;Kenya</div>
+                        <div class="member-name">松尾　健哉</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-eisei-1">
+                    <img src="../images/page_member/mem-so-eis1ari.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 衛生1年</div>
+                        <div class="member-alph">ARAI&nbsp;&nbsp;Shunpei</div>
+                        <div class="member-name">荒井　駿平</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・電気</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu-1">
+                    <img src="../images/page_member/mem-so-kyo1hin.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室1年</div>
+                        <div class="member-alph">HINO&nbsp;&nbsp;Yusuke</div>
+                        <div class="member-name">日野　優介</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+                <div class="member member-yatai-1">
+                    <img src="../images/page_member/mem-so-yti1skgr.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台1年</div>
+                        <div class="member-alph">&nbsp;&nbsp;Mizuki</div>
+                        <div class="member-name">鹿倉　瑞希</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-eisei-1">
+                    <img src="../images/page_member/mem-so-eis1ngmn.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 衛生1年</div>
+                        <div class="member-alph">NAGAMINE&nbsp;&nbsp;</div>
+                        <div class="member-name">永嶺　蒼人</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-kyositsu-1">
+                    <img src="../images/page_member/mem-so-kyo1wtnb.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室1年</div>
+                        <div class="member-alph">WATANABE&nbsp;&nbsp;Yuki</div>
+                        <div class="member-name">渡辺　有紀</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-yatai-1">
+                    <img src="../images/page_member/mem-so-yti1tkhs.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台1年</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;</div>
+                        <div class="member-name">高橋　青樹</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member" style="background-color: transparent;">
+                </div>
+                <div class="member member-kyositsu-1">
+                    <img src="../images/page_member/mem-so-kyo1kbys.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 教室1年</div>
+                        <div class="member-alph">KOBAYASHI&nbsp;&nbsp;Wakana</div>
+                        <div class="member-name">小林　和佳奈</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-yatai-1">
+                    <img src="../images/page_member/mem-so-yti1sgwr.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">総務局 屋台1年</div>
+                        <div class="member-alph">SUGAWARA&nbsp;&nbsp;</div>
+                        <div class="member-name">菅原　碧</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="kaikei">会計局</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member member-kaikei-3">
+                    <img src="../images/page_member/mem-48kaikei.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局長</div>
+                        <div class="member-alph">YAMASHITA&nbsp;&nbsp;Kouhei</div>
+                        <div class="member-name">山下　航平</div>
+                        <div class="member-nickname">やまちゃん</div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei-3">
+                    <img src="../images/page_member/mem-ka-3tak.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 渉外担当</div>
+                        <div class="member-alph">TAKAHASHI&nbsp;&nbsp;Kento</div>
+                        <div class="member-name">髙橋　建登</div>
+                        <div class="member-nickname">たかけん</div>
+                        <div class="member-faculty">工・電子</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei">
+                    <img src="../images/page_member/mem-ka-2mor.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 2年</div>
+                        <div class="member-alph">MORIKAWA&nbsp;&nbsp;Gen</div>
+                        <div class="member-name">森川　源</div>
+                        <div class="member-nickname">ジャン</div>
+                        <div class="member-faculty">工・電子</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-kaikei">
+                    <img src="../images/page_member/mem-ka-2tak.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 2年</div>
+                        <div class="member-alph">TAKAMINE&nbsp;&nbsp;Ryoma</div>
+                        <div class="member-name">高峰　竜馬</div>
+                        <div class="member-nickname">リョーマ</div>
+                        <div class="member-faculty">シス理・機制</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei">
+                    <img src="../images/page_member/mem-ka-2nai.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 2年</div>
+                        <div class="member-alph">NAITO&nbsp;&nbsp;Takenori</div>
+                        <div class="member-name">内藤　豪紀</div>
+                        <div class="member-nickname">タケ</div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei">
+                    <img src="../images/page_member/mem-ka-2isi.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 2年</div>
+                        <div class="member-alph">ISHIDA&nbsp;&nbsp;Ryuki</div>
+                        <div class="member-name">石田　龍希</div>
+                        <div class="member-nickname">リューキ</div>
+                        <div class="member-faculty">シス理・数理</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-kaikei-1">
+                    <img src="../images/page_member/mem-ka-1hat.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">HATA&nbsp;&nbsp;Nao</div>
+                        <div class="member-name">畠　菜央</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei-1">
+                    <img src="../images/page_member/mem-ka-1nak.PNG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">NAKAZAWA&nbsp;&nbsp;Shun</div>
+                        <div class="member-name">中澤　駿</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・環シス</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei-1">
+                    <img src="../images/page_member/mem-ka-1isi.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">ISHII&nbsp;&nbsp;Keita</div>
+                        <div class="member-name">石井　啓太</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-kaikei-1">
+                    <img src="../images/page_member/mem-ka-1kur.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">KURIYAMA&nbsp;&nbsp;Ryunosuke</div>
+                        <div class="member-name">栗山　隆之介</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">デザ工・ロボ情</div>
+                    </div>
+                </div>
+                <div class="member member-kaikei-1">
+                    <img src="../images/page_member/mem-ka-1aka.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">AKAMI&nbsp;&nbsp;Naoya</div>
+                        <div class="member-name">赤見　尚哉</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="keibi">警備局</h5>
+        <div class="dep-wrapper">
+            <div class="dep-inner">
+                <div class="member member-keibi-3">
+                    <img src="../images/page_member/mem-48keibi.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局長</div>
+                        <div class="member-alph">KOBAYASHI&nbsp;&nbsp;Hiroki</div>
+                        <div class="member-name">小林　大樹</div>
+                        <div class="member-nickname">ひろき</div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-keibi">
+                    <img src="../images/page_member/mem-ke-2kaw.PNG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 2年</div>
+                        <div class="member-alph">KAWASAKI&nbsp;&nbsp;Norihumi</div>
+                        <div class="member-name">川崎　矩史</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・応化</div>
+                    </div>
+                </div>
+                <div class="member member-keibi">
+                    <img src="../images/page_member/mem-ke-2an.jpeg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 2年</div>
+                        <div class="member-alph">ANDO&nbsp;&nbsp;Takashi</div>
+                        <div class="member-name">安藤　崇</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-keibi">
+                    <img src="../images/page_member/mem-ke-2yab.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 2年</div>
+                        <div class="member-alph">YABUMOTO&nbsp;&nbsp;Yuki</div>
+                        <div class="member-name">藪本　悠紀</div>
+                        <div class="member-nickname">やぶ</div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+                <div class="member member-keibi">
+                    <img src="../images/page_member/mem-ke-2ued.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 2年</div>
+                        <div class="member-alph">UEDA&nbsp;&nbsp;Hisamichi</div>
+                        <div class="member-name">上田　久道</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+                <div class="member member-keibi-1">
+                    <img src="../images/page_member/mem-ke-1mor.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">MORODA&nbsp;&nbsp;Ayumi</div>
+                        <div class="member-name">諸田　歩美</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・土木</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-keibi-1">
+                    <img src="../images/page_member/mem-ke-1nis.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 1年</div>
+                        <div class="member-alph">NISHIMURA&nbsp;&nbsp;Akie</div>
+                        <div class="member-name">西村　秋絵</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">工・情報工</div>
+                    </div>
+                </div>
+                <div class="member member-keibi-1">
+                    <img src="../images/page_member/mem-ke-1kat.JPG" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 1年</div>
+                        <div class="member-alph">KATO&nbsp;&nbsp;Nanako</div>
+                        <div class="member-name">加藤　菜々子</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">シス理・生命</div>
+                    </div>
+                </div>
+                <div class="member member-keibi-1">
+                    <img src="../images/page_member/mem-ke-1mot.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">会計局 1年</div>
+                        <div class="member-alph">MOTOMURA&nbsp;&nbsp;</div>
+                        <div class="member-name">本村　裕樹</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dep-inner">
+                <div class="member member-keibi-1">
+                    <img src="../images/page_member/mem-ke-1wat.jpg" class="member-img">
+                    <div class="member-detail">
+                        <div class="member-dep">警備局 1年</div>
+                        <div class="member-alph">WATANABE&nbsp;&nbsp;Haruka</div>
+                        <div class="member-name">渡辺　晴香</div>
+                        <div class="member-nickname"></div>
+                        <div class="member-faculty">建築</div>
                     </div>
                 </div>
             </div>
@@ -113,4 +1523,24 @@
 
     </main>
     <footer></footer>
-</body></html>
+</body>
+<script>
+    $(function() {
+        // clickするとscroll
+        $('.top-nav__li').on('click', function() {
+            let idName = $(this).attr("name");
+            $("html,body").animate({
+                scrollTop: $(idName).offset().top - 100
+            });
+            $('.is-active').removeClass('is-active');
+            $(this).addClass('is-active');
+            setTimeout(function() {
+                $('.is-active').removeClass('is-active');
+            }, 1000)
+        })
+
+    })
+
+</script>
+
+</html>

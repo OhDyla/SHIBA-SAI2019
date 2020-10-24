@@ -882,11 +882,20 @@ nav li a:hover {
     max-width: 900px;
 }
 
-.companies-wrapper img {
+
+.companies__long-banner {
     margin: 10px;
-    height: 250px;
-    width: auto;
+    width: 620px;
+    height: auto;
 }
+
+
+.companies__normal-banner {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+}
+
 
 /* ---------- ---------- --------- */
 /* コンタクトセクション */
@@ -2374,7 +2383,7 @@ footer a:hover {
     }
 
     .access-box {
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
         padding: 20px;
         width: 75%;
         background-color: white;

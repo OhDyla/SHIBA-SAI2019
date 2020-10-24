@@ -91,10 +91,30 @@ h8 {
 .companies__lareine {
     grid-column: 1;
     grid-row: 1/-1;
-    padding: 30px 50px;
+    padding: 30px 60px;
     background-color: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(33, 33, 33, 30%);
+}
+
+.companies__lareine__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.companies__lareine__title h3 {
+    display: inline-block;
+    flex: 0 0 70%;
+}
+
+.companies__lareine__title a {
+    flex: 0 0 30%;
+}
+
+.companies__lareine__title img {
+    width: 30px;
+    height: 30px;
 }
 
 .companies__lareine img:nth-child(2n) {
