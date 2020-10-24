@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 h1 {
-    margin: 30px;
-    padding: 5px;
+    margin: 20px;
+
     font-size: 50px;
     text-align: center;
     color: royalblue;
@@ -203,6 +203,77 @@ h8 {
     ここに記載したCSSは上書きされる
     そのため色を始めとした上書きを必要としないものは記載しない
     */
+
+    h1 {
+        margin: 10px;
+        font-size: 26px !important;
+
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 15px !important;
+    }
+
+
+    h8 {
+        font-size: 12px !important;
+
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .member-wrapper {
+        margin: 5px;
+        margin-bottom: 16px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .inmember-wrapper {
+        margin-top: 10px;
+    }
+
+    .dep-dep-wrapper {
+        margin-top: 55px;
+    }
+
+    .dep-wrapper {
+        width: 100%;
+        display: block
+    }
+
+    .tohyo {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        /*    */
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .vote-button {
+        margin: 10px auto;
+        min-height: 60px;
+    }
+
+    .tool-fontsize-18 {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
 
 
     .companies {
