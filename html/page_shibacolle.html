@@ -116,89 +116,80 @@
                         </div>
                     </div>
 
+                    <ul class="tab__ul" id="tab__ul">
+                        <li class="tab__li is-active" name="#tab-home">Home</li>
+                        <li class="tab__li tab__li__about" name="#tab-about">About</li>
+                        <li class="tab__li" name="#tab-backnumber">BackNumber</li>
+                    </ul>
 
-
-
-                    <!--- Welcome Section -->
-                    <div class="container-fluid padding">
-                        <div class="welcome text-center">
-                            <img class="welcome-zebra" src="img/zebra.png">
-                            <div class="col-12">
-                                <h1 class="display-4">SHIBAURA COLLECTION<br>2020</h1>
-                                <h2 class="fairy">Fairy tale</h2>
+                    <div class="tab-content tab-home" id="tab-home">
+                        <div class="tab-home__tron">
+                            <div class="tab-home__tron-title">
+                                <div class="tab-home__tron-title-name">SHIBAURA COLLECTION<br>2020</div>
+                                <div class="tab-home__tron-fairy">Fairy tale</div>
                             </div>
-                            <hr style="z-index: 10; color: gray;">
-                            <div class="col-12">
-                                <p>
-                                    <p>現役の芝浦生のみがステージに立つことが許され、芝浦のおしゃれを世界に発信する個性豊かなファッションショーが今年も開催される。</p>
+                            <p class="tab-home__tron-detail">
+                                現役の芝浦生のみがステージに立つことが許され<br>芝浦のおしゃれを世界に発信する個性豊かなファッションショーが今年も開催される
+                            </p>
+                        </div>
+
+
+                        <!-- 出場者　どんどんが書くところ -->
+                        <div class="stageSec section-style">
+                            <!-- ここを消してここにかいてね！ -->
+                        </div>
+
+                        <div class="tab-home__about">
+                            <div class="tab-home__about-left">
+                                <h2>Shibaura<br>Collectionとは...</h2>
+                                <p>芝浦工業大学、芝浦際実行委員会が一年間の準備期間をかけ、芝浦の「おしゃれ」を発信するために、芝浦生の中から厳選されたおしゃれさんをモデルとして構成されたファッションショーを皆様に届けます...</p>
+                                <div class="tab-home__about-button-wrapper">
+                                    <div style="text-align: center; margin-top: 30px;">
+                                        <a class="tab-home__about-button" name="tab-about">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-home__about-right">
+                                <img src="../images/page_shibacolle/intro.png">
+                            </div>
+                        </div>
+
+                        <div class="tab-home__sns">
+                            <h2 class="tab-home__sns-title">SNS</h2>
+                            <div class="tab-home__sns-grid">
+                                <div class="tab-home__instagram">
+                                    <h3 class="tab-home__sns-name">Instagram</h3>
+                                    <!-- SnapWidget -->
+                                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                                    <iframe src="https://snapwidget.com/embed/822203" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+                                </div>
+                                <div class="tab-home__twitter">
+                                    <h3 class="tab-home__sns-name">Twitter</h3>
+                                    <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/shibacolle_sit?ref_src=twsrc%5Etfw">Tweets by shibacolle_sit</a>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- 出場者　どんどんが書くところ -->
-                    <div class="stageSec section-style">
-                        <!-- ここを消してここにかいてね！ -->
-                    </div>
-
-
-                    <!--- Two Column Section -->
-                    <div class="container-fluid padding">
-                        <div class="row padding">
-                            <div class="col-lg-6">
-                                <h2>SHIBAURA COLLECTON とは...</h2>
-                                <br>
-                                <p>SHIBAURA COLLECTIONとは、芝浦工業大学で行われる学園祭、「芝浦祭」での芝浦祭実行委員会が主催となって行う大人気イベントの１つ。2017年に別企画「S-1」から派生し、今年で第4回を迎えるSHIBAURA COLLECTION。芝浦祭実行委員が長い時間の準備期間をかけ、照明、BGM、ウォーキング構成など細かな所までこだわり抜いた演出を皆さんにお送りいたします。モデルの方々は芝浦祭実行委員によってスカウトされた方や、推薦、応募など幅広い種弾を用いて、芝浦屈指の学生をモデルに起用させていただいております！また、より良いファッションショーを作り出すために、スタッフ、モデルを毎年入れ替え、皆様に毎年レベルアップしているショーをお届けできるように、日々精進しております！</p>
-                                <h4>SHIBAURA COLLECTION 2020のテーマは「<span class="fairy">Fairy tale</span>」</h4>
-                                <p>今年度の芝浦祭のテーマが「絵本の世界」ということで、SHIBAURA COLLECTIONのテーマを「<span class="fairy">Fairy tale</span>」　御伽噺をイメージした演出にこだわり、ファンタジーな世界を皆様にお届けいたします！</p>
+                    <div class="tab-content tab-about" id="tab-about">
+                        <div class="tab-about__wrapper">
+                            <div class="tab-about__left-up">
+                                <h3 class="tab-about__title">SHIBAURA COLLECTON とは...</h3>
+                                <p>SHIBAURA COLLECTIONとは、芝浦工業大学で行われる学園祭、「芝浦祭」での芝浦祭実行委員会が主催となって行う大人気イベントの１つ。<br>2017年に別企画「S-1」から派生し、今年で第4回を迎えるSHIBAURA COLLECTION。<br><br>芝浦祭実行委員が長い時間の準備期間をかけ、照明、BGM、ウォーキング構成など細かな所までこだわり抜いた演出を皆さんにお送りいたします。<br><br>モデルの方々は芝浦祭実行委員によってスカウトされた方や、推薦、応募など幅広い種弾を用いて、芝浦屈指の学生をモデルに起用させていただいております！<br><br>また、より良いファッションショーを作り出すために、スタッフ、モデルを毎年入れ替え、皆様に毎年レベルアップしているショーをお届けできるように、日々精進しております！</p>
                             </div>
-                            <div class="col-lg-6">
-                                <img src="img/about1.JPG" class="img-fluid">
+                            <div class="tab-about__left-middle">
+                                <h4 class="tab-about__title">SHIBAURA COLLECTION 2020<br> テーマは「<span class="fairy">Fairy tale</span>」</h4>
+                                <p>今年度の芝浦祭のテーマが「絵本の世界」ということで、SHIBAURA COLLECTIONのテーマを「<span class="fairy">Fairy tale</span>」に決定させていただきました。<br>御伽噺をイメージした演出にこだわり、ファンタジーな世界を皆様にお届けいたします！</p>
                             </div>
-                        </div>
-                    </div>
-
-
-                    <!-- BackNumber -->
-                    <div class="backSec section-style">
-                        <h2>Back Number</h2>
-                        <a href="../index.html" style="text-decoration: none;">
-                            <div class="backSec-btn">
-                                <span class="backSec-btn-text">Check!</span>
+                            <div class="tab-about__right-up">
+                                <img src="../images/page_shibacolle/about1.JPG" class="tab-about__img">
+                                <img src="../images/page_shibacolle/about2.JPG" class="tab-about__img">
                             </div>
-                        </a>
-                    </div>
-
-                    <!-- instagram -->
-                    <div class="container-fluid padding">
-                        <div class="row text-center">
-                            <div class="col-12">
-                                <h1>SNS</h1>
+                            <div class="tab-about__left-down">
+                                <img src="../images/page_shibacolle/about3.JPG" class="tab-about__img">
                             </div>
-                            <div class="col-lg-6 col-xs-12">
-                                <h3>Instagram</h3>
-                                <!-- SnapWidget -->
-                                <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                                <iframe src="https://snapwidget.com/embed/822203" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
-                            </div>
-                            <div class="col-lg-6 col-xs-12">
-                                <h3>Twitter</h3>
-                                <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/shibacolle_sit?ref_src=twsrc%5Etfw">Tweets by shibacolle_sit</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--- Two Column Section -->
-                    <div class="container-fluid padding">
-                        <div class="row padding">
-                            <div class="col-lg-6">
-                                <img src="img/about2.jpg" class="img-fluid">
-                            </div>
-                            <div class="col-lg-6 text-center">
-                                <br>
-                                <br>
+                            <div class="tab-about__right-down">
                                 <h2>STAFF</h2>
                                 <br>
                                 <h5>齋田 浩生</h5>
@@ -206,25 +197,425 @@
                                 <h5>輿水 理咲</h5>
                                 <h5>石井 雅人</h5>
                                 <br>
+                                <h5>大木 勇汰</h5>
+                                <h5>小野 和佳子</h5>
+                                <h5>岳本 陽菜</h5>
+                                <h5>辻元 匡秀</h5>
+                                <br>
                                 <h5>芝浦祭実行委員会</h5>
                             </div>
                         </div>
-                    </div>
 
-                    <hr class="my-4">
+                        <hr class="my-4">
 
-                    <!--- Connect -->
-                    <div class="container-fluid padding">
-                        <div class="row text-center padding">
-                            <div class="col-12">
-                                <h2>Connect</h2>
-                            </div>
-                            <div class="col-12 social padding">
-                                <a href="https://twitter.com/shibacolle_sit" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://instagram.com/shibacolle_sit" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <div class="container-fluid padding">
+                            <div class="row text-center padding">
+                                <div class="col-12">
+                                    <h2>Connect</h2>
+                                </div>
+                                <div class="col-12 social padding">
+                                    <a href="https://twitter.com/shibacolle_sit" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://instagram.com/shibacolle_sit" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="tab-content tab-backnumber" id="tab-backnumber" style="padding-top: 50px;">
+
+                        <!-- Grid row -->
+                        <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-md-12 d-flex justify-content-center mb-5">
+
+                                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+                                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Men</button>
+                                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Women</button>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+                        <div class="gallery" id="gallery">
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/DSC01255.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/DSC01335.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/DSC01289.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/DSC01371.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/DSC01480.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/DSC01489.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/DSC_0058.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/DSC_0073.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/DSC_0217.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5823.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_0931.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1040.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1052.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_0946.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1078.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1201.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1273.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1383.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_5799.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5833.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5844.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5849.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5867.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_0940.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_5870.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5907.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5914.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5924.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5935.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5950.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5968.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5982.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_5993.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_6155.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6032.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6044.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6057.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_1460.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_6103.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6112.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6123.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6130.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6142.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6131.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6146.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/IMG_6157.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/DSC_0121.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6204.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6216.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6222.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6227.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_6232.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all">
+                                <img class="img-fluid" src="img/backnumber/DSC01258.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6241.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6252.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6258.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6272.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6343.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/backnumber/IMG_1151.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6350.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6354.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="mb-3 pics animation all 2">
+                                <img class="img-fluid" src="img/backnumber/IMG_6355.JPG" alt="Card image cap">
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+
+                    </div>
+
+
+
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                            //初期表示
+                            $(".tab-content").hide();
+                            $(".tab-content:first").show();
+                            //is-clicked
+                            $(".tab__li").click(function() {
+                                // <li>
+                                $(".tab__li").removeClass("is-active");
+                                $(this).addClass("is-active");
+                                // <div class="tab-content">
+                                $(".tab-content").hide();
+                                let thisTab = $(this).attr("name");
+                                $(thisTab).fadeIn();
+                                return false;
+                            });
+                            // button-is-clicked
+                            $(".tab-home__about-button").click(function() {
+                                // <li>
+                                $(".tab__li").removeClass("is-active");
+                                $(".tab__li__about").addClass("is-active");
+                                // <div class="tab-content">
+                                $(".tab-content").hide();
+                                $("#tab-about").fadeIn();
+                                $("html,body").animate({
+                                    scrollTop: $("#tab__ul").offset().top
+                                }, 400);
+                                return false;
+                            });
+
+                            $(function() {
+                                let selectedClass = "";
+                                $(".filter").click(function() {
+                                    selectedClass = $(this).attr("data-rel");
+                                    $("#gallery").fadeTo(100, 0.1);
+                                    $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
+                                    setTimeout(function() {
+                                        $("." + selectedClass).fadeIn().addClass('animation');
+                                        $("#gallery").fadeTo(300, 1);
+                                    }, 300);
+                                });
+                            });
+                        });
+
+                    </script>
 
 
                 </div>
