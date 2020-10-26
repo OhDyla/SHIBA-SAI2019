@@ -223,7 +223,7 @@ body {
         display: grid;
         grid-template-columns: 50px auto 270px auto 50px;
         grid-template-rows: [sidebar] auto [other] auto;
-        min-height: 1800px;
+        min-height: 1800px !important;
     }
 
     .carousel-indicators {
@@ -277,7 +277,7 @@ body {
         width: 90%;
         font-size: 20px;
         line-height: 25px;
-        border-bottom: 2px solid rgb(180, 180, 180);
+        border-bottom: 1px solid rgb(180, 180, 180);
     }
 
     .tab-home__tron-detail {
@@ -355,7 +355,8 @@ body {
 
     /* tab-about */
     .tab-about__wrapper {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 20px;
     }
 
@@ -365,17 +366,21 @@ body {
     }
 
     .tab-about__left-up {
+        order: 1;
         padding: 10px 10px;
     }
 
 
     .tab-about__right-up {
-        padding: 0px 10px;
+        order: 2;
+        padding: 0px 40px;
     }
 
     .tab-about__left-middle {
+        order: 3;
         padding: 10px 10px;
     }
+
 
     .tab-about__left-up p,
     .tab-about__left-middle p {
@@ -384,11 +389,13 @@ body {
 
 
     .tab-about__left-down {
-        padding: 30px 0px 0px 10px;
+        order: 5;
+        padding: 10px 40px 0px 40px;
     }
 
     .tab-about__right-down {
-        padding: 10px 10px 0 10px;
+        order: 4;
+        padding: 50px 10px 0 10px;
         text-align: center;
     }
 
