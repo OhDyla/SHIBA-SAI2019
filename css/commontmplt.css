@@ -685,7 +685,7 @@ footer a:hover {
     }
 
     .main-wrapper {
-        margin-top: 50px;
+        margin-top: 20px;
         display: grid;
         grid-template-columns: 50px auto 270px auto 50px;
         grid-template-rows: [sidebar] auto [other] auto;
