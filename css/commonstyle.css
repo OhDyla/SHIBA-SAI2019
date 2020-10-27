@@ -2363,39 +2363,64 @@ footer a:hover {
         width: 100%;
     }
 
+
+    /* ---------- ---------- --------- */
+    /* アクセスセクション */
+
     .access-wrapper {
         text-align: center;
-        overflow: hidden;
-        width: 100%;
+        font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+        font-weight: 500;
     }
 
     .access-wrapper h4,
     .access-wrapper p {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .caution {
         font-weight: bold;
     }
 
-    .caution-under {
-        background: linear-gradient(transparent 60%, #FF0000 0%);
-    }
 
     .access-box {
-        margin: 0 auto 50px auto;
-        padding: 20px;
-        width: 75%;
-        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .access-box__name {
+        margin: 20px 0 5px 5px !important;
+        font-size: 16px !important;
+        font-weight: bold;
+        color: #666666;
+    }
+
+
+    .access-box_title {
+        font-size: 16px !important;
+    }
+
+
+    .access-box__gray {
+        padding: 10px;
+    }
+
+    .access-box__link {
+        margin: 30px auto 20px auto;
+        padding: 10px 20px;
+        width: 80px;
+        border-radius: 20px;
+    }
+
+
+    .access-box__link a {
+        font-size: 16px;
     }
 
     .ggmap {
         margin-top: 50px;
-    }
-
-    .ggmap iframe {
-        width: 250px;
-        height: 200px;
     }
 
     /* ---------- ---------- --------- */
