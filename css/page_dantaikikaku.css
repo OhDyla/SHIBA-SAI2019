@@ -27,10 +27,18 @@ bookshelf-bottom {
 .group-wrapper-live {
     width: 160px;
     height: 250px;
-    border: 1px solid;
+    border: 3px solid;
     text-align: center;
     background-color: #ffdab9;
     transition: 0.2s;
+}
+
+.group-wrapper-blank {
+    width: 160px;
+    height: 250px;
+    border: 3px solid;
+    text-align: center;
+    background-color: #ffdab9;
 }
 
 .group-wrapper-live {
@@ -102,11 +110,25 @@ bookshelf-bottom {
     border-color: #0000ff;
 }
 
-
-.sq {
+/*sq1は下段芝祭ロゴ(borderを適用しないため)*/
+.sq,
+.sq1 {
     margin-top: 25px;
+    margin-bottom: 10px;
     width: 114px;
     height: 114px;
+}
+
+.sq {
+    border: 1px solid black;
+}
+
+.l {
+    border-left: 6px solid black;
+}
+
+.r {
+    border-right: 6px solid black;
 }
 
 
@@ -139,6 +161,12 @@ p2 {
 
 
 
+.forline {
+    border-top: 2px solid #cd5c5c;
+    padding-top: 10px;
+}
+
+
 .sp {
     display: none;
 }
@@ -146,6 +174,7 @@ p2 {
 .sptext {
     font-size: 0px;
 }
+
 
 @media screen and (max-width: 959px) and (min-width:560px) {
 
@@ -172,10 +201,14 @@ p2 {
     .group-wrapper-live {
         width: 160px;
         height: 200px;
-        border: 1px solid;
-        text-align: center;
+        border: 2px solid;
     }
 
+    .group-wrapper-blank {
+        width: 160px;
+        height: 200px;
+        border: 2px solid;
+    }
 
     .sebyousi,
     .sebyousi_twin,
@@ -196,27 +229,38 @@ p2 {
         background-color: #a52a2a;
     }
 
-    .sq {
-        width: 103px;
-        height: 103px;
+    .blank-live {
+        width: 60px;
+        height: 200px;
     }
 
-    h4 {
-        font-size: 16px;
-        margin: 10px;
+    .sq,
+    .sq1 {
+        margin-top: 20px;
+        margin-bottom: 4px;
+        width: 98px;
+        height: 98px;
     }
 
+
+    h4,
     h5 {
         font-size: 16px;
         margin: 10px;
     }
 
-    p {
-        font-size: 0px;
+    .l {
+        border-left: 4px solid black;
     }
 
+    .r {
+        border-right: 4px solid black;
+    }
+
+
+    p,
     p2 {
-        font-size: 0px;
+        display: none;
     }
 
 }
@@ -233,21 +277,24 @@ p2 {
     bookshelf,
     bookshelf-bottom {
         padding: 30px 0px 0px 0px;
-        border-top: groove #d2691e 10px;
-        border-right: ridge #d2691e 10px;
-        border-left: groove #d2691e 10px;
+
     }
 
-    bookshelf-bottom {
-        border-bottom: groove #d2691e 10px;
+    .group-wrapper {
+        background: linear-gradient(to top, #ffdab9, #ffebcd);
+
     }
 
     .group-wrapper,
+    .group-wrapper-blank,
     .group-wrapper-live {
         width: 70px;
         height: 200px;
         border: 1px solid;
+
     }
+
+
 
     .sebyousi,
     .sebyousi_twin,
@@ -257,45 +304,40 @@ p2 {
         border: 0px solid;
     }
 
-    .sebyousi_twin {
-        width: 0px;
-    }
 
+
+
+    .blank,
+    .blank-live,
     .sebyousi_live {
         width: 0px;
-        color: darkred;
-        background: linear-gradient(to top, #d2691e, #ff8c00);
-
-    }
-
-    .blank {
-        width: 0px;
         height: 0px;
     }
 
-    .blank-live {
-        width: 0px;
-        height: 0px;
+    .forline {
+        border-top: 0px solid black;
+        padding-top: 0px;
+
     }
+
 
     .sq {
         width: 40px;
         height: 40px;
         margin-top: 10px;
+        margin-bottom: 0px;
+        border: 4px solid;
     }
 
     .sp {
         display: flex;
     }
 
-
-    /*
-    .ver {
-        position: absolute;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
+    p,
+    p2 {
+        display: none;
     }
-*/
+
 
     h4,
     h5 {
@@ -304,14 +346,11 @@ p2 {
 
     }
 
-    p {
-        font-size: 0px;
-    }
 
-    p2 {
-        font-size: 0px;
-    }
 
+    .pctext {
+        display: none;
+    }
 
 
     .sptext {
@@ -319,12 +358,15 @@ p2 {
         font-family: 'Noto Serif JP', serif;
     }
 
-    .vertical {
+    /*    ShibaLabに適用*/
+    .middletext {
+        font-size: 20px;
+    }
+
+    /*SHARXSに適用*/
+    .smalltext {
         font-size: 18px;
     }
 
-    .pctext {
-        font-size: 0px;
-    }
 
 }
