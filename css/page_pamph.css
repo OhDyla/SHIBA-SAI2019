@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+.main-contents * {
+    font-family: 'Sawarabi Mincho', sans-serif;
+    /* 日本語 */
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-contents .fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+
+.pamph__title {
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.pamph__about {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.pamph__dl {
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 240px;
+    font-size: 18px;
+    color: #FF0000;
+    font-weight: bold;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    background-color: #FFFFFF;
+    border: 3px solid #FF0000;
+}
+
+.pamph__dl:hover {
+    transition: 0.2s;
+    color: #FFFFFF;
+    background-color: rgba(255, 0, 0, 70%);
+}
+
+.pamph__line-wrapper {
+    padding: 20px 40px 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pamph__line {
+    flex: 0 1 40%;
+    height: 1px;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.pamph__line-mid {
+    flex: 0 0 15%;
+}
+
+.pamph__img {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 559px) {
+
+    .pamph__title {
+        padding: 0 0 20px 0;
+        font-size: 24px;
+    }
+
+    .pamph__about {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .pamph__dl {
+        margin: 16px auto;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .pamph__line-wrapper {
+        padding: 10px 0 40px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pamph__line {
+        flex: 0 1 40%;
+        height: 1px;
+    }
+
+    .pamph__line-mid {
+        flex: 0 0 30%;
+    }
+
+}

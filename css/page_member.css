@@ -45,6 +45,8 @@ main {
     list-style: none;
 }
 
+
+
 @media screen and (max-width: 359px) {
     .top-nav__li {
         padding: 5px;

@@ -195,6 +195,32 @@ h8 {
 
 
 
+/* 動画 */
+
+.movie * {
+    text-align: center;
+}
+
+.movie__title {
+    padding: 50px 0 0 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.movie__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.movie__box {
+    flex: 0 0 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
 
 
 @media screen and (max-width: 559px) {
@@ -311,6 +337,31 @@ h8 {
     .companies__kiralabo-right {
         margin-bottom: 20px;
     }
+
+
+    /* 動画 */
+
+    .movie * {}
+
+    .movie__title {
+        padding: 32px 0 0 0;
+        font-size: 28px;
+    }
+
+    .movie__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie__box {
+        flex: 0 0 100%;
+        padding: 20px 10px;
+    }
+
+    .movie__box p {
+        font-size: 20px;
+    }
+
 
 }
 
