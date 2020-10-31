@@ -1,7 +1,132 @@
 .main-contents {
-    background-color: rgba(255, 255, 255, 55%);
+    background-color: transparent;
     width: 900px;
 }
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+/* 上部 メインステージ */
+
+.stage {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.stage * {
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.stage__main-title {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Henny Penny', cursive;
+}
+
+.stage__tab-button {
+    display: flex;
+}
+
+.stage__button {
+    transition: 0.3s;
+    flex: 0 0 25%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Satisfy', cursive;
+    color: #696969;
+    background-color: #808080;
+    border: 2px solid #696969;
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+
+.stage__button:nth-child(1) {
+    border-left: 2px solid #696969;
+    border-top-left-radius: 20px;
+}
+
+.stage__button:last-child {
+    border-right: 2px solid #696969;
+    border-top-right-radius: 20px;
+}
+
+.stage__button.is-active {
+    transition: 0.3s;
+    color: #FFF;
+    background: radial-gradient(#FFD700, #FF4500);
+}
+
+.stage__button-schedule {
+    color: #FFA500;
+    background: -moz-linear-gradient(top left, #FFF, #FFC778);
+    background: -webkit-linear-gradient(top left, #FFF, #FFC778);
+    background: linear-gradient(to bottom right, #FFF, #FFC778);
+}
+
+
+
+.stage__tab-wrapper {
+    padding: 30px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 128, 128, 50%);
+}
+
+.stage__tab-title {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Henny Penny', cursive;
+}
+
+.stage__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.stage__section {
+    flex: 0 0 30%;
+}
+
+.stage__section * {
+    color: #FFF;
+}
+
+.stage__section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stage__detail-button {
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    width: 150px;
+    height: 48px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: rgb(46, 139, 87);
+    border: 1px solid rgb(46, 139, 87);
+    border-radius: 20px;
+}
+
+.stage__detail-button:hover {
+    transition: 0.2s;
+    color: rgb(46, 139, 87);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* tab3 団体企画 */
+
+
+
+/* ----- ----- ----- */
+/* ----- ----- ----- */
+/* 下部 タイムテーブル */
 
 .time-table1 {
     width: 900px;
@@ -131,13 +256,40 @@ a {
     color: #00BFFF;
 }
 
-/*
-.tab_item {
-    width: 900px;
-    height: 500px;
-    color: #00BFFF;
+/* ----- ----- ----- */
+/* 企画内容 */
+
+.dep-sec {
+    margin: 0 auto;
+    padding: 50px 0;
 }
-*/
+
+.dep-sec * {
+    text-align: center;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.dep__title {
+    font-size: 32px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.dep__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dep__box {
+    flex: 0 0 30%;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dep__name {
+    padding: 5px 0;
+}
 
 @media screen and (max-width: 959px) and (min-width:560px) {
     /* タブレットレイアウト */
@@ -231,6 +383,75 @@ a {
         width: 270px;
     }
 
+
+    /* ----- ----- ----- */
+    /* ----- ----- ----- */
+    /* 上部 メインステージ */
+
+    .stage {
+        padding: 0 0px 50px 0px;
+    }
+
+    .stage__main-title {
+        padding-bottom: 12px;
+        font-size: 40px;
+    }
+
+
+    .stage__tab-button {
+        display: flex;
+    }
+
+    .stage__button {
+        padding: 12px 0;
+        font-size: 12px;
+    }
+
+    .stage__button:nth-child(1) {
+        border-top-left-radius: 10px;
+    }
+
+    .stage__button:last-child {
+        border-top-right-radius: 10px;
+    }
+
+
+    .stage__button.is-active {
+        color: #FFF;
+        background: radial-gradient(#FFD700, #FF4500);
+    }
+
+    .stage__tab-wrapper {
+        padding: 20px 12px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(0, 128, 128, 50%);
+    }
+
+    .stage__tab-title {
+        padding-top: 10px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .stage__section-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .stage__section {
+        flex: 0 0 100%;
+    }
+
+    .stage__section-title {
+        font-size: 20px;
+    }
+
+    /* ----- ----- ----- */
+    /* ----- ----- ----- */
+    /* 下部 タイムテーブル */
+
     .time-table1 {
         width: 270px;
         height: 195px;
@@ -313,6 +534,22 @@ a {
 
     .tablet-firstline {
         display: block;
+    }
+
+    /* ----- ----- ----- */
+    /* 企画内容 */
+
+    .dep__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .dep__box {
+        flex: 0 0 90%;
+        padding: 20px 0;
+        font-weight: bold;
+        font-size: 20px;
     }
 
 }

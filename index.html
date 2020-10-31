@@ -10,9 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!--  フォントのリンク  -->
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Henny+Penny&family=Satisfy&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!--
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Henny Penny', cursive; /* ハロウィン */
+        font-family: 'Satisfy', cursive; /* 筆記体 */
+        font-family: 'Sawarabi Mincho', sans-serif; /* 日本語 */
+    -->
+
 
     <!--  アイコンのリンク  -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -58,7 +63,6 @@
     ・menu__Tabletでのposition/size
     ・menu__iPhoneでのdouble-tap問題
     ・access__レスポンシブ全般
-    ・access__iPhoneでのbox-shadow見切れ問題
     ・companies__Tabletでのheight問題
     other
     ・background__iPhoneでのcover問題
@@ -67,6 +71,23 @@
 
 <body>
 
+    <div class="alert">
+        <div class="alert__box">
+            <div class="alert__cancel">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="alert__appendex">この表示は数秒後に自動で閉じられます</div>
+            <div class="alert__title">特集</div>
+            <div class="alert__img">
+                <img class="alert__img-img" src="images/event-msmr.jpg">
+            </div>
+            <div class="alert__variable-title">Miss/Mr.SHIBAURA<br>事前動画<br>絶賛公開中！</div>
+            <a href="html/page_msmr.html" class="alert__href">
+                <div class="alert__jump-button">詳細はこちら</div>
+            </a>
+        </div>
+    </div>
+
     <main>
         <header>
             <div class="header-container">
@@ -74,7 +95,7 @@
                     <ul>
                         <li><a href="#">Top</a></li>
                         <li><a href="html/page_time-table.html">MainStage</a></li>
-                        <li><a href="html/page_geinou.html">Artist</a></li>
+                        <li><a href="html/page_pamph.html">Pamphlet</a></li>
                         <li class="nav-divide nav-jump" name="#sec-access"><a href="#">Access</a></li>
                         <li class="nav-contact nav-jump" name="#sec-contact"><a href="#">Contact</a></li>
                     </ul>
@@ -100,8 +121,8 @@
                 <hr style=" width: 400px; color: #FFFFFF">
                 <ul>
                     <li><a href="html/page_time-table.html"><span>Main Stage</span></a></li>
-                    <li><a href="html/page_time-table.html"><span>Time Table</span></a></li>
-                    <li><a href="#"><span>How to see</span></a></li>
+                    <li><a href="html/page_time-table.html#time-tab-start"><span>Time Table</span></a></li>
+                    <li><a href="html/page_pamph.html"><span>Pamphlet</span></a></li>
 
                 </ul>
                 <hr style=" width: 400px; color: #FFFFFF">
@@ -151,10 +172,12 @@
                         </div>
                     </a>
                     <p class="detailline">-- -- -- -- -- -- -- -- -- DETAIL -- -- -- -- -- -- -- -- --</p>
-                    <a href="html/page_time-table.html" class="timetable-link">
+                    <a href="html/page_time-table.html#time-tab-start" class="timetable-link">
                         <div class="timetable-button">TIME Table</div>
                     </a>
-                    <div class="how-to">視聴方法　<i class="fas fa-caret-right"></i></div>
+                    <a href="html/page_pamph.html" style="text-decoration: none; color: #000;">
+                        <div class="how-to">パンフレット　<i class="fas fa-caret-right"></i></div>
+                    </a>
                 </div>
 
             </div>
@@ -241,7 +264,7 @@
                                 <div><img src="images/evimg-bingo.png"></div>
                                 <p class="evnt-date">Day.1 10:30-</p>
                                 <p class="evnt-intro">LIVE配信<br><br>去年まではビンゴ大会を開催しておりましが，今年はクイズ大会を開催します！！<br>今年の景品は★史上一番豪華★になっております．<br>参加は無料ですのでぜひ奮ってご参加ください！</p>
-                                <a href="#" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
+                                <a href="html/page_time-table.html#link-quiz" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li ev-msmr">
                                 <h3>Miss / Mr<br>SHIBAURA</h3>
@@ -251,25 +274,25 @@
                                 <a href="html/page_msmr.html" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li">
-                                <h3>Rock'in<br>SHIBAURA</h3>
+                                <h3>ROCK IN<br>SHIBAURA</h3>
                                 <div><img src="images/evimg-rock.JPG"></div>
                                 <p class="evnt-date">Day.2 11:40-</p>
                                 <p class="evnt-intro">LIVE配信<br><br>芝浦工大ナンバーワンを決めるバンドバトル！！<br>今年は新たに個人の部を追加！弾き語りやデュエットなどパフォーマンスは様々です<br>そして今年は視聴者の皆さんが審査員！ぜひ投票の方もよろしくお願いします</p>
-                                <a href="#" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
+                                <a href="html/page_time-table.html#link-rockin" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li">
                                 <h3>S-1<br>グランプリ</h3>
                                 <div><img src="images/evimg-sone.JPG"></div>
                                 <p class="evnt-date">Day.2 13:30-</p>
                                 <p class="evnt-intro">LIVE配信<br><br>森の奥深くに，笑いが絶えないとても幸せな暮らしを送っている村があった．<br>そんなあるとき，国各地で感染病が流行してしまう．<br>苦しんでいる人々に笑顔を届けるため，村人が立ち上がったのだった...</p>
-                                <a href="#" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
+                                <a href="html/page_time-table.html#link-sone" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li">
                                 <h3>きゃわめん<br>コンテスト</h3>
                                 <div><img src="images/evimg-kyawa.png"></div>
                                 <p class="evnt-date">Day.2 16:00-</p>
                                 <p class="evnt-intro">LIVE配信<br><br>きゃわめんコンテンストとは，芝浦工業大学で1番きゃわいい(かわいい)男の子を決めるコンテストです．<br>コンテスト内では，体張り企画や告白シチュエーションがあり，毎年盛り上がりをみせています．</p>
-                                <a href="#" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
+                                <a href="html/page_time-table.html#link-kyawa" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li">
                                 <h3>芸能人<br>企画</h3>
@@ -290,7 +313,7 @@
                                 <div><img src="images/evimg-daikou.png"></div>
                                 <p class="evnt-date">ALL DAY</p>
                                 <p class="evnt-intro">事前録画による<br>オンデマンド配信<br><br>2021年入学生必見！！<br>一人暮らしに不安がある，イメージが沸かない，そんなお悩み解決します！<br>一人暮らしの楽しみ方など，一人暮らしのリアルをお伝えします！<br>役立つ情報が盛り沢山！<br>是非ご覧くださ〜い！</p>
-                                <a href="#" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
+                                <a href="html/page_time-table.html#link-daikou" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
                             <li class="events-li">
                                 <h3>部活/サークル<br>団体企画</h3>
@@ -342,9 +365,34 @@
                     <img src="images/vector-m-dia.png" class="main-dia-img">
                 </div>
 
+                <!-- 四工大セクション               -->
+                <section class="sec-project4">
+                    <div class="sectitle-wrapper">
+                        <img src="images/vector-sword-L1.png">
+                        <h5>四工大</h5>
+                        <img src="images/vector-sword-R.png">
+                    </div>
+                    <div class="proj__wrapper">
+                        <div class="proj__img">
+                            <img src="images/project4.png">
+                        </div>
+                        <div class="proj__detail">四工大プロジェクトとは、東京都にある4つの理工系大学(工学院大学・東京都市大学・芝浦工業大学・東京電機大学)の学園祭実行委員会から発足したプロジェクトです。<br><br>四つの大学の学園祭実行委員会が集まって交流を図り各大学の学園祭の発展および、大学群である「四工大」の知名度の向上を目指しています。</div>
+
+                        <a target="_blank">
+                            <div class="proj__box" style="background-color: #FFD700;">工学院大学：八王子祭・新宿祭</div>
+                        </a>
+                        <a target="_blank">
+                            <div class="proj__box" style="background-color: #00008B;">東京都市大学：世田谷祭</div>
+                        </a>
+                        <a target="_blank">
+                            <div class="proj__box" style="background-color: #00BFFF;">東京電機大学：旭祭</div>
+                        </a>
+                    </div>
+                </section>
+
 
                 <!--  企業協賛セクション              -->
-                <section class="sec-companies">
+                <section class="sec-companies" id="sec-companies">
                     <div class="sectitle-wrapper">
                         <img src="images/vector-sword-L1.png">
                         <h5>企業協賛</h5>
@@ -409,7 +457,7 @@
             <ul class="footlist-1">
                 <li>視聴情報</li>
                 <li><a href="html/page_time-table.html">メインステージ</a></li>
-                <li><a href="#">視聴方法</a></li>
+                <li><a href="html/page_pamph.html">パンフレット</a></li>
             </ul>
             <ul class="footlist-2">
                 <div class="footlist-3">
@@ -417,22 +465,23 @@
                     <li><a href="html/page_geinou.html">芸能人情報</a></li>
                     <li><a href="html/page_msmr.html">Mr./Miss.SHIBAURA</a></li>
                     <li><a href="html/page_shibacolle.html">Shibaura Collection</a></li>
-                    <li><a href="#">きゃわめんコンテンスト</a></li>
+                    <li><a href="html/page_time-table.html#link-quiz">クイズ大会</a></li>
                 </div>
                 <div class="footlist-4">
                     <li></li>
                     <li><a href="index.html">&nbsp;</a></li>
-                    <li><a href="#">Rock in Shibaura</a></li>
-                    <li><a href="index.html">大講義室企画</a></li>
-                    <li><a href="index.html">ビンゴ大会</a></li>
-                    <li><a href="index.html">部活/サークル団体企画</a></li>
+                    <li><a href="html/page_time-table.html#link-rockin">ROCK IN SHIBAURA</a></li>
+                    <li><a href="html/page_time-table.html#link-sone">S-1グランプリ</a></li>
+                    <li><a href="html/page_time-table.html#link-kyawa">きゃわめんコンテンスト</a></li>
+                    <li><a href="html/page_time-table.html#link-daikou">大講義室企画</a></li>
+                    <li><a href="html/page_danntaikikaku.html">部活/サークル団体企画</a></li>
                 </div>
             </ul>
         </div>
         <ul class="footer-third">
-            <li><a href="index.html">大学へのアクセス</a></li>
-            <li><a href="index.html">企業協賛</a></li>
-            <li><a href="#">コンタクト</a></li>
+            <li><a href="#sec-access">大学へのアクセス</a></li>
+            <li><a href="#sec-companies">企業協賛</a></li>
+            <li><a href="#sec-contact">コンタクト</a></li>
             <li><a href="#">English Page</a></li>
         </ul>
         <p class="copy">&copy;第48回芝浦祭実行委員会</p>
@@ -440,6 +489,40 @@
 </body>
 <script>
     $(function() {
+
+        let random1 = Math.floor(Math.random() * 2);
+        let random2 = Math.floor(Math.random() * 7);
+        let randomMod = random2 % 3;
+
+        let aleartData = [{
+            title: 'Mss/Mr.SHIBAURA<br>事前動画<br>絶賛公開中！',
+            imgdata: 'images/event-msmr.jpg',
+            srcdata: 'html/page_msmr.html'
+        }, {
+            title: 'パンフレット<br>遂に公開！',
+            imgdata: 'images/event-pamph.png',
+            srcdata: 'html/page_pamph.html'
+        }, {
+            title: 'Shibaura<br>Collection<br>特集ページ',
+            imgdata: 'images/event-shibacolle.jpg',
+            srcdata: 'html/page_shibacolle.html'
+        }]
+
+        if (random1 % 2 === 0) {
+            $('.alert').css('display', 'none');
+        } else {
+            $('.alert__variable-title').html(aleartData[randomMod].title);
+            $('.alert__img-img').attr('src', aleartData[randomMod].imgdata);
+            $('.alert__href').attr('href', aleartData[randomMod].srcdata);
+
+            $('.alert__cancel').on('click', function() {
+                $('.alert').fadeOut();
+            })
+            setTimeout(function() {
+                $('.alert').fadeOut();
+            }, 4000);
+        }
+
         $('.menu-btn').on('click', function() {
             $('.menu').fadeToggle(200);
         })

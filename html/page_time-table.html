@@ -9,9 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <!--  フォントのリンク  -->
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Henny+Penny&family=Satisfy&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!--
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Henny Penny', cursive; /* ハロウィン */
+        font-family: 'Satisfy', cursive; /* 筆記体 */  
+        font-family: 'Sawarabi Mincho', sans-serif; /* 日本語 */
+    -->
+    <!--  本ページのみのフォント  -->
+
 
     <!--  アイコンのリンク  -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -58,7 +64,7 @@
                     <ul>
                         <li><a href="../index.html">Top</a></li>
                         <li><a href="page_time-table.html">MainStage</a></li>
-                        <li><a href="page_geinou.html">Artist</a></li>
+                        <li><a href="page_pamph.html">Pamphlet</a></li>
                         <li class="nav-divide"><a href="../index.html#sec-access">Access</a></li>
                         <li class="nav-contact"><a href="../index.html#sec-contact">Contact</a></li>
                     </ul>
@@ -116,8 +122,49 @@
             </div>
 
             <div class="main-contents">
-
+                <div class="stage">
+                    <div class="stage__main-title">Main Stage</div>
+                    <div class="stage__tab-button">
+                        <div class="stage__button is-active" name="#tab-today">Today's</div>
+                        <div class="stage__button" name="#tab-every">Everytime</div>
+                        <div class="stage__button" name="#tab-circle">団体企画</div>
+                        <div class="stage__button stage__button-schedule">Schedule</div>
+                    </div>
+                    <div class="stage__tab-wrapper">
+                        <div class="stage__tab" id="tab-today">
+                            <div class="stage__tab-title">Day.0</div>
+                            <div class="stage__section-wrapper">
+                                <div class="stage__section">
+                                    <div class="stage__section-title">Miss/Mr.SHIBAURA</div>
+                                    <a href="page_msmr.html">
+                                        <div class="stage__detail-button">企画内容</div>
+                                    </a>
+                                    <div>
+                                        <p>事前動画1</p>
+                                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MyR2pDcr_1o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div>
+                                        <p>事前動画2</p>
+                                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/hShrV_A0isM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage__tab" id="tab-every">
+                            <div class="stage__tab-title">Everytime</div>
+                            <div style="padding-top: 30px;">開演をお待ちください</div>
+                        </div>
+                        <div class="stage__tab" id="tab-circle">
+                            <div class="stage__tab-title">Club&amp;Circle</div>
+                            <a href="page_danntaikikaku.html">
+                                <div class="stage__detail-button">詳しくはこちら</div>
+                            </a>
+                            <div style="padding-top: 30px;">開演をお待ちください</div>
+                        </div>
+                    </div>
+                </div>
                 <!--タブ自体を作る-->
+                <div id="time-tab-start"></div>
                 <a class="tab_btn" href="#item1">11/1</a>
                 <a class="tab_btn" href="#item2">11/2</a>
                 <a class="tab_btn" href="#item3">11/3</a>
@@ -135,20 +182,20 @@
                         <div class="kikaku-wrapper">
                             <h1>クイズ大会</h1>
                             <h2>10:30～11:40</h2>
-                            <p>山路を登りながら、こう考えた。智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <p>今年は Apple Watch の最新版や AirPods Pro をはじめ例年よりも豪華なものプレゼントを揃えております！<br>参加費は無料！ぜひご参加ください！</p>
+                            <a class="detail" href="#link-quiz">詳しい説明はこちら</a>
                         </div>
                         <div class="kikaku-wrapper">
                             <h1>アニ研</h1>
                             <h2>13:30～14:50</h2>
                             <p>アニメーション研究会による発表です！アニメ好きの方は必見です！！</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="page_danntaikikaku.html">詳しい説明はこちら</a>
                         </div>
                         <div class="kikaku-wrapper">
                             <h1>Ms./Mr. SHIBAURA</h1>
                             <h2>16:00～16:30</h2>
                             <p>芝浦1の美男美女を決めるコンテストです！皆さんの好みの人が見つかるかも...？</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="page_msmr.html">詳しい説明はこちら</a>
                         </div>
                         <div class="space"></div>
                     </div>
@@ -167,25 +214,25 @@
                             <h1>NewTone</h1>
                             <h2>10:10～12:10</h2>
                             <p>アカペラサークルNewToneによる発表です！綺麗なハーモニーをお楽しみください♪</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="page_danntaikikaku.html">詳しい説明はこちら</a>
                         </div>
                         <div class="kikaku-wrapper">
-                            <h1>S-1</h1>
+                            <h1>S-1グランプリ</h1>
                             <h2>13:30～14:30</h2>
                             <p>芝浦1の面白い人を決めるコンテストです！笑ってコロナを吹き飛ばしましょう！！</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="#link-sone">詳しい説明はこちら</a>
                         </div>
                         <div class="kikaku-wrapper">
                             <h1>数理科学研究会</h1>
                             <h2>14:40～15:50</h2>
-                            <p>山路を登りながら、こう考えた。智に働けば角が立つ。情に棹させば流される。意地を通せば窮屈だ。</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <p>数理科学研究会による発表です！純粋数学の面白さをとくとご覧あれ！</p>
+                            <a class="detail" href="page_danntaikikaku.html">詳しい説明はこちら</a>
                         </div>
                         <div class="kikaku-wrapper">
                             <h1>きゃわめんコンテスト</h1>
                             <h2>16:00～16:50</h2>
                             <p>女学生の少ない芝浦工大...とうとう男学生が女装を始めました！面白い女装男子がたくさんいるので是非ご覧下さい！！</p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="#link-kyawa">詳しい説明はこちら</a>
                         </div>
                         <div class="space"></div>
                         <div class="space"></div>
@@ -207,26 +254,72 @@
                             <h2>13:30～14:30</h2>
                             <p>今年はスペシャルゲストとしてまいんちゃんこと”福原遥さん”が来て下さいました！素敵なトークショーを是非ご覧ください！！
                             </p>
-                            <a class="detail" href="#">詳しい説明はこちら</a>
+                            <a class="detail" href="page_geinou.html">詳しい説明はこちら</a>
                         </div>
                     </div>
                 </div>
 
-                <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-                <script>
-                    $(function() {
-                        $('.tab_btn').on('click', function() {
-                            $('.tab_item').removeClass("is-active-item");
-                            $($(this).attr("href")).addClass("is-active-item");
-                        });
-                    });
-
-                </script>
-
+                <div class="dep-sec">
+                    <div class="dep__title">企画内容</div>
+                    <div class="dep__wrapper">
+                        <div class="dep__box">
+                            <div class="dep__name" id="link-quiz">Day.1 10:30~<br>クイズ大会</div>
+                            <img src="../pdf/png_quiz.png">
+                        </div>
+                        <div class="dep__box" id="link-rockin">
+                            <div class="dep__name">Day.2 11:40~<br>ROCK IN SHIBAURA</div>
+                            <img src="../pdf/png_rockin.png">
+                        </div>
+                        <div class="dep__box" id="link-sone">
+                            <div class="dep__name">Day.2 13:30~<br>S-1グランプリ</div>
+                            <img src="../pdf/png_sone.png">
+                        </div>
+                        <div class="dep__box">
+                            <div class="dep__name" id="link-kyawa">Day.2 16:00~<br>きゃわめんコンテスト</div>
+                            <img src="../pdf/48th_pamph_20.jpg">
+                        </div>
+                        <div class="dep__box">
+                            <div class="dep__name" id="link-daikou">常設企画<br>一人暮らしの部屋紹介</div>
+                            <img src="../pdf/48th_pamph_22.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+
+            $(".stage__tab").hide();
+            $(".stage__tab:first").show();
+            //is-clicked
+            $(".stage__button").click(function() {
+                // <button>
+                if ($(this).hasClass('stage__button-schedule')) {
+                    $("html,body").animate({
+                        scrollTop: $(".tab_btn").offset().top - 50
+                    }, 400);
+                } else {
+                    $(".stage__button").removeClass("is-active");
+                    $(this).addClass("is-active");
+                    // <div class="stage__tab">
+                    $(".stage__tab").hide();
+                    let thisTab = $(this).attr("name");
+                    $(thisTab).fadeIn();
+                    return false;
+                }
+            });
+
+            $('.tab_btn').on('click', function() {
+                $('.tab_item').removeClass("is-active-item");
+                $($(this).attr("href")).addClass("is-active-item");
+            });
+        });
+
+    </script>
 
     <footer>
         <img src="../images/48th_logo_White.png" class="footer-logo">
@@ -236,29 +329,31 @@
             <ul>
                 <li><a href="../index.html">トップページ</a></li>
                 <li><a href="#">メンバーページ</a></li>
-                <li><a href="#" target="_blank">芝浦工大公式公式HP</a></li>
+                <li><a href="https://www.shibaura-it.ac.jp/" target="_blank">芝浦工大公式公式HP</a></li>
             </ul>
         </div>
         <div class="footer-second">
             <ul class="footlist-1">
                 <li>視聴情報</li>
                 <li><a href="page_time-table.html">メインステージ</a></li>
-                <li><a href="#">視聴方法</a></li>
+                <li><a href="page_pamph.html">パンフレット</a></li>
             </ul>
             <ul class="footlist-2">
                 <div class="footlist-3">
                     <li>開催イベント</li>
                     <li><a href="page_geinou.html">芸能人情報</a></li>
-                    <li><a href="page_msmr.html">Mr./Mss.SHIBAURA</a></li>
+                    <li><a href="page_msmr.html">Mr./Miss.SHIBAURA</a></li>
                     <li><a href="page_shibacolle.html">Shibaura Collection</a></li>
-                    <li><a href="#">きゃわめんコンテンスト</a></li>
+                    <li><a href="page_time-table.html#link-quiz">クイズ大会</a></li>
                 </div>
                 <div class="footlist-4">
-                    <li><a>&nbsp;</a></li>
-                    <li><a href="#">Rock'in Shibaura</a></li>
-                    <li><a href="../index.html">大講義室企画</a></li>
-                    <li><a href="index.html">ビンゴ大会</a></li>
-                    <li><a href="index.html">部活/サークル団体企画</a></li>
+                    <li></li>
+                    <li><a href="index.html">&nbsp;</a></li>
+                    <li><a href="page_time-table.html#link-rockin">ROCK IN SHIBAURA</a></li>
+                    <li><a href="page_time-table.html#link-sone">S-1グランプリ</a></li>
+                    <li><a href="page_time-table.html#link-kyawa">きゃわめんコンテンスト</a></li>
+                    <li><a href="page_time-table.html#link-daikou">大講義室企画</a></li>
+                    <li><a href="page_danntaikikaku.html">部活/サークル団体企画</a></li>
                 </div>
             </ul>
         </div>
