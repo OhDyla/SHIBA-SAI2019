@@ -1,0 +1,38 @@
+.main-contents {
+    padding: 50px 20px;
+    background-color: rgba(255, 255, 255, 70%);
+}
+
+.main-contents * {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.events__box {}
+
+
+
+.events__box-text {
+    padding: 20px;
+}
+
+.events__box-text-text {
+    padding: 20px 0;
+}
+
+
+.events__box-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.events__box-img-box {
+    flex: 0 0 45%;
+    padding: 10px;
+}

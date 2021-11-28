@@ -208,9 +208,25 @@ h8 {
     font-family: 'Sawarabi Mincho', sans-serif;
 }
 
+.movie__end-img {
+    padding: 30px 20% 50px 20%;
+}
+
+.movie__end-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.movie__end-box {
+    flex: 0 0 40%;
+    padding: 0 10px;
+}
+
 .movie__wrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .movie__box {
@@ -346,6 +362,22 @@ h8 {
     .movie__title {
         padding: 32px 0 0 0;
         font-size: 28px;
+    }
+
+    .movie__end-img {
+        padding: 30px 10px 50px 10px;
+    }
+
+    .movie__end-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .movie__end-box {
+        flex: 0 0 90%;
+        padding: 30px 10px;
     }
 
     .movie__wrapper {

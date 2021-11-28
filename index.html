@@ -79,11 +79,11 @@
             <div class="alert__appendex">この表示は数秒後に自動で閉じられます</div>
             <div class="alert__title">特集</div>
             <div class="alert__img">
-                <img class="alert__img-img" src="images/event-msmr.jpg">
+                <!--                <img class="alert__img-img" src="images/geinou_img.jpg">-->
             </div>
-            <div class="alert__variable-title">Miss/Mr.SHIBAURA<br>事前動画<br>絶賛公開中！</div>
-            <a href="html/page_msmr.html" class="alert__href">
-                <div class="alert__jump-button">詳細はこちら</div>
+            <div class="alert__variable-title">第48回芝浦祭<br>閉幕しました</div>
+            <a href="#" class="alert__href">
+                <div class="alert__jump-button">開催レポート</div>
             </a>
         </div>
     </div>
@@ -187,7 +187,7 @@
                     <p>48th SHIBAURA-SAI<br>PICTURE BOOK World</p>
                     <p>Once upon a time...<br>there was a little girl who loves to play outside.<br>One day, someone said to her, "It's not safe out there. Don't go out there. Have a good time at home."<br>The girl decided to read a picture book...</p>
                     <h4 class="context-day">2020. 11. 1 <span class="color-red">(Sun)</span> - 3 (Tue)</h4>
-                    <h4 class="context-jp">第48回芝浦祭<br>本会場にて<span class="new-line"></span><span class="color-blue">オンライン開催</span>決定</h4>
+                    <h4 class="context-jp">第48回芝浦祭は<br><span class="new-line"></span><span class="color-blue">閉幕</span>いたしました</h4>
                 </div>
             </div>
         </div>
@@ -276,7 +276,7 @@
                             <li class="events-li">
                                 <h3>ROCK IN<br>SHIBAURA</h3>
                                 <div><img src="images/evimg-rock.JPG"></div>
-                                <p class="evnt-date">Day.2 11:40-</p>
+                                <p class="evnt-date">Day.2 12:10-</p>
                                 <p class="evnt-intro">LIVE配信<br><br>芝浦工大ナンバーワンを決めるバンドバトル！！<br>今年は新たに個人の部を追加！弾き語りやデュエットなどパフォーマンスは様々です<br>そして今年は視聴者の皆さんが審査員！ぜひ投票の方もよろしくお願いします</p>
                                 <a href="html/page_time-table.html#link-rockin" class="evnt-btn"><i class="fas fa-chess-knight"></i>&nbsp;&nbsp;detail&nbsp;&nbsp;<i class="fas fa-chess-knight"></i></a>
                             </li>
@@ -490,38 +490,49 @@
 <script>
     $(function() {
 
-        let random1 = Math.floor(Math.random() * 2);
-        let random2 = Math.floor(Math.random() * 7);
-        let randomMod = random2 % 3;
+        //        let random1 = Math.floor(Math.random() * 2);
+        //        let random2 = Math.floor(Math.random() * 6);
+        //        let randomMod = random2 % 6;
 
-        let aleartData = [{
-            title: 'Mss/Mr.SHIBAURA<br>事前動画<br>絶賛公開中！',
-            imgdata: 'images/event-msmr.jpg',
-            srcdata: 'html/page_msmr.html'
-        }, {
-            title: 'パンフレット<br>遂に公開！',
-            imgdata: 'images/event-pamph.png',
-            srcdata: 'html/page_pamph.html'
-        }, {
-            title: 'Shibaura<br>Collection<br>特集ページ',
-            imgdata: 'images/event-shibacolle.jpg',
-            srcdata: 'html/page_shibacolle.html'
-        }]
+        //        let aleartData = [{
+        //            title: '団体企画<br>YouTube<br>リンク完了！',
+        //            imgdata: 'images/evimg-circle.JPG',
+        //            srcdata: 'html/page_danntaikikaku.html'
+        //        }, {
+        //            title: 'パンフレット<br>遂に公開！',
+        //            imgdata: 'images/event-pamph.png',
+        //            srcdata: 'html/page_pamph.html'
+        //        }, {
+        //            title: '福原遥さん<br>トークショー<br>Day3.13:30~',
+        //            imgdata: 'images/geinou_img.jpg',
+        //            srcdata: 'html/page_geinou.html'
+        //        }, {
+        //            title: 'Shibaura<br>Collection<br>遂に公開！',
+        //            imgdata: 'images/event-shibacolle.jpg',
+        //            srcdata: 'html/page_shibacolle.html'
+        //        }, {
+        //            title: '福原遥さん<br>トークショー<br>Day3.13:30~',
+        //            imgdata: 'images/geinou_img.jpg',
+        //            srcdata: 'html/page_geinou.html'
+        //        }, {
+        //            title: '福原遥さん<br>トークショー<br>Day3.13:30~',
+        //            imgdata: 'images/geinou_img.jpg',
+        //            srcdata: 'html/page_geinou.html'
+        //        }]
 
-        if (random1 % 2 === 0) {
-            $('.alert').css('display', 'none');
-        } else {
-            $('.alert__variable-title').html(aleartData[randomMod].title);
-            $('.alert__img-img').attr('src', aleartData[randomMod].imgdata);
-            $('.alert__href').attr('href', aleartData[randomMod].srcdata);
-
-            $('.alert__cancel').on('click', function() {
-                $('.alert').fadeOut();
-            })
-            setTimeout(function() {
-                $('.alert').fadeOut();
-            }, 4000);
-        }
+        //        if (random1 % 2 === 0) {
+        //            $('.alert').css('display', 'none');
+        //        } else {
+        //            $('.alert__variable-title').html(aleartData[random2].title);
+        //            $('.alert__img-img').attr('src', aleartData[random2].imgdata);
+        //            $('.alert__href').attr('href', aleartData[random2].srcdata);
+        $('.alert__cancel').on('click', function() {
+            $('.alert').fadeOut();
+        })
+        setTimeout(function() {
+            $('.alert').fadeOut();
+        }, 4000);
+        //        }
 
         $('.menu-btn').on('click', function() {
             $('.menu').fadeToggle(200);
